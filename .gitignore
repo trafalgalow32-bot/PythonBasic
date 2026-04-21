@@ -1,0 +1,15 @@
+# 파이썬 가상환경 (가장 중요!)
+venv/
+.venv/
+env/
+.env/
+
+# IDE 설정 파일 (사용자 PC마다 다름)
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# OS 시스템 파일
+.DS_Store
+Thumbs.db
