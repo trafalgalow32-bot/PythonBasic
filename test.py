@@ -35,4 +35,4 @@ h = int(h)
 # s = w * h 
 # print(s)
 print(w * h) # 다른 풀이
-
+# GitHub
