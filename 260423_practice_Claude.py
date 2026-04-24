@@ -92,4 +92,15 @@ employees = {
 # 이영희 : 3,500,000원
 # 박민준 : 4,100,000원
 # 정하늘 : 3,200,000원 """
+employees = {
+    "김철수": 2_800_000,
+    "이영희": 3_500_000,
+    "박민준": 4_100_000,
+    "최지우": 2_450_000,
+    "정하늘": 3_200_000
+}
+for name, salary in employees.items(): # items 뒤에 괄호()
+    if salary >= 3000000:
+        # print(employees.items()) # 내 실수
+        print(f"{name} : {salary} 원")
 
