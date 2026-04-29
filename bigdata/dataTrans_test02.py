@@ -135,3 +135,43 @@ df.loc[df['Class'] == 'E', 'Class_E'] = 1
 #df의 Class열이 F가 아니면, Class_F 열에 0을 추가
 df.loc[df['Class'] != 'F', 'Class_F'] = 0
 print(df)
+
+print("\n 예제")
+"""
+학생의 id(s1, s2, s3, s4, s5, s6)를 담은 'student_id' 컬럼과 시험점수(55, 90, 85, 71, 63, 99)를 담은 'score' 컬럼으로 구성된
+데이터프레임을 생성하자. 그 후 시험점수가 90점 이상이면 '수', 80점 이상 90점 미만이면 '우', 70점 이상 80점 미만이면 '미', 60점 이상
+70점 미만이면 '양', 60점 미만이면 '가'로 분류하는 'grade'라는 컬럼을 새롭게 생성하고 생성한 'grade' 컬럼에 대하여 라벨 인코딩과
+원-핫 인코딩을 시행해보자.
+"""
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+print("학생 데이터 프레임")
+obj = {'student_id' : ['s1', 's2', 's3', 's4', 's5', 's6'],
+       'score' : [55, 90, 85, 71, 63, 99]}
+df = pd.DataFrame(obj)
+print(df)
+
+print("\n 구간화한 파생변수 grade 열 생성")
+df['grade'] = pd.cut(df['score'],
+                bins = [0, 60, 69, 79, 89, 100],               
+                labels = ['가', '양', '미', '우', '수'],
+                right=False)
+print(df)
+
+print("\n sklearn을 활용한 라벨 인코딩")
+lb_encoder = LabelEncoder()
+lb_encoder.fit(df['grade'])
+lb_labels = lb_encoder.transform(df['grade'])
+print(lb_labels)
+print("숫자 값에 대응되는 원본 레이블")
+print(lb_encoder.classes_)
+
+print("\n sklearn을 활용한 원-핫 인코딩")
+lb_labels_2d = lb_labels.reshape(-1,1) # 2d 라벨
+
+oh_encoder = OneHotEncoder(sparse_output= False)
+oh_encoder.fit(lb_labels_2d)
+
+oh_labels = oh_encoder.transform(lb_labels_2d)
+print(oh_labels)
