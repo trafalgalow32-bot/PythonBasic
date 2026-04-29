@@ -71,3 +71,4 @@ file_name = "file/"+email[:email.index("@")]+".txt"
 with open(file_name ,"w",encoding="utf-8") as f:
     f.write(name,file=f)
     f.write(email,file=f)
+    writeln(f, password)

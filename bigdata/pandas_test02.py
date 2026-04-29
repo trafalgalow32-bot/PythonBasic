@@ -104,6 +104,7 @@ colnm = ['Name', 'Age']
 print(df[colnm])
 
 print("\n Case2. 행만 참조, iloc은 위치 기반으로, 데이터프레임명.iloc[행위치인덱스]")
+#. 정수 위치 기반. Integer-based. 끝절 미포함!
 print(df.iloc[1])
 print("2~5번째 표 기준")
 print(df.iloc[1:5])
@@ -111,3 +112,60 @@ print(df.iloc[1:5])
 print("\n 연속하지 않은 위치일 경우에도 리스트로 행을 참조")
 idx = [1,3]
 print(df.iloc[idx])
+
+print("\n loc: 레이블 기반")
+# loc은 레이블 기반이며, 데이터프레임명.loc[행레이블인덱스]. Label-based. 끝절 미포함
+# 2번째(표 기준) 행의 값과 원래의 컬럼명을 레이블 인덱스로 가지는 시리즈
+print(df.loc['b'])
+print("\n 2~5번째(표기준) 행을 가지는 데이터프레임")
+print(df.loc['b':'e'])
+
+print("\n 대부분의 레이블 인덱스는 연속하지 않음")
+rownm = ['b','d'] # 리스트로 행을 강조
+print(df.loc[rownm])
+
+print("\n Case3. 인덱서 없이 행과 열을 동시에 참조하는 방법")
+print("i) 하나의 열에 대해 인덱싱")
+df['Age'] # Age 열 참조
+print(df['Age'])
+
+print("ii) 행에 대해 인덱싱")
+# 시리즈가 되기 때문에 가능해짐
+df['Age']['a']
+df['Age'][0]
+print(df['Age']['a'])
+print(df['Age'][0])
+
+print("\n Case4. 여러 열에 대해, 행과 열을 동시에 참조하는 방법")
+# i) iloc를 통한 방법: 2d-array와 동일
+# 행: 위치 인덱스 번호가 1에서 4 사이
+# 열: 위치 인덱스 번호가 1에서 행길이(마지막)
+print("i) iloc를 통한 방법")
+df.iloc[1:4,1:]
+print(df.iloc[1:4,1:])
+
+print("\n ii) loc를 통한 방법")
+# ii) loc를 통한 방법: 2d-array에서의 방법에 숫자 대신 레이블을 이용
+# 행 인덱스(로우명)이 b이고 열 인덱스(컬럼명)이 Name
+df.loc['b', 'Name']
+print(df.loc['b', 'Name'])
+
+print("\n 대부분의 행과 열의 레이블 인덱스(특히 열)은 연속되지 않아 리스트 사용")
+# 행 : b, d, e
+# 열 : Name, Sex
+rownm = ['b', 'd', 'e']
+colnm = ['Name', 'Sex']
+df.loc[rownm, colnm]
+print(df.loc[rownm, colnm])
+
+print("\n 라. 데이터프레임의 통계 메소드")
+# 데이터프레임은 시리즈와 동일한 통계 메소드를 사용하여 컬럼별 요약 통계량을 확인할 수 있다.
+# (단, 데이터프리엠의 경우 컬럼의 데이터타입이 float, int인 경웨 대해서만 사용 가능)
+print("데이터프레임 생성")
+obj = {'Name' : ['Olivia', 'Lucas', 'Sophia', 'Zoe', 'Ava', 'Elliot'],
+       'Sex' : ['Female', 'Male', 'Female', 'Female', 'Female', 'Male'],
+       'Age' : [22, 32, 27, 18, 38, 19],
+       'Score' : [100, 95, 60, 77, 83, 84]
+       }
+df = pd.DataFrame(obj) # 데이터 프레임 생성
+print(df.describe()) # 컬럼별 요약 통계량에 대한 정보(float, int인 경우만!)
