@@ -1,0 +1,2901 @@
+Gender,Ages,Customer_Type,Class,Departure_Delay_in_Minutes,Arrival_Delay_in_Minutes
+Male,"[10, 20)",NL,Eco,0,0
+Male,10_19,L,Eco,2,0
+Male,10_19,NL,Business,63,56
+Female,10_19,NL,Eco,0,0
+Female,10_19,L,Eco,0,0
+Male,10_19,L,Business,0,0
+Female,10_19,L,Business,0,0
+Male,10_19,NL,Business,0,0
+Male,10_19,L,Business,0,3
+Female,10_19,NL,Eco,0,0
+Female,10_19,L,Business,0,0
+Female,10_19,NL,Eco,0,0
+Female,10_19,L,Eco,0,0
+Female,10_19,L,Business,16,3
+Female,10_19,L,Eco,0,0
+Male,10_19,NL,Eco,52,40
+Male,10_19,NL,Business,11,42
+Female,10_19,NL,Eco,0,0
+Male,10_19,L,Eco,8,0
+Male,10_19,L,Eco,31,39
+Female,10_19,L,Eco,0,0
+Female,10_19,NL,Business,0,0
+Male,10_19,NL,Business,0,0
+Male,10_19,L,Eco,4,1
+Male,10_19,L,Business,0,2
+Male,10_19,L,Eco,3,0
+Male,10_19,L,Business,0,3
+Female,10_19,L,Eco,0,0
+Female,10_19,NL,Business,0,0
+Male,10_19,L,Business,0,0
+Female,10_19,NL,Business,4,0
+Male,10_19,L,Business,0,0
+Female,10_19,L,Business,0,0
+Female,10_19,NL,Business,5,0
+Female,10_19,L,Business,2,0
+Female,10_19,L,Business,0,0
+Male,10_19,NL,Eco,0,3
+Male,10_19,NL,Eco,19,25
+Male,10_19,L,Eco,1,0
+Female,10_19,L,Eco,0,0
+Female,20_29,NL,Business,8,22
+Male,20_29,NL,Eco,0,0
+Male,20_29,L,Business,0,0
+Female,20_29,L,Business,8,4
+Female,20_29,NL,Eco,3,0
+Female,20_29,L,Business,0,5
+Female,20_29,L,Business,21,15
+Male,20_29,L,Business,15,8
+Male,20_29,L,Eco,0,5
+Male,20_29,NL,Eco,0,0
+Male,20_29,L,Business,0,0
+Male,20_29,NL,Eco,10,34
+Female,20_29,L,Business,0,0
+Male,20_29,L,Business,0,0
+Female,20_29,L,Eco,0,0
+Female,20_29,NL,Business,0,0
+Female,20_29,L,Eco,0,0
+Female,20_29,NL,Eco,0,0
+Female,20_29,NL,Business,0,3
+Female,20_29,L,Business,18,28
+Male,20_29,L,Eco,0,0
+Female,20_29,L,Business,0,0
+Female,20_29,L,Eco,3,7
+Male,20_29,L,Eco,0,0
+Female,20_29,L,Business,0,0
+Male,20_29,L,Eco,0,0
+Male,20_29,L,Eco,0,1
+Male,20_29,L,Business,0,0
+Female,20_29,NL,Business,5,0
+Male,20_29,L,Business,0,0
+Male,20_29,L,Eco,0,0
+Male,20_29,L,Eco,4,14
+Male,20_29,L,Eco,0,0
+Male,20_29,L,Eco,0,0
+Female,20_29,L,Eco,52,38
+Female,20_29,L,Eco,11,21
+Female,20_29,NL,Eco,0,0
+Female,20_29,L,Business,0,2
+Female,20_29,L,Business,19,14
+Male,20_29,L,Business,0,0
+Male,20_29,L,Eco,0,0
+Female,20_29,L,Eco,0,0
+Female,20_29,L,Business,0,0
+Male,20_29,L,Business,0,0
+Male,20_29,NL,Business,0,0
+Male,20_29,NL,Business,26,27
+Male,20_29,L,Business,0,3
+Male,20_29,L,Business,8,0
+Male,20_29,L,Eco,0,0
+Male,20_29,L,Business,0,0
+Male,20_29,NL,Business,0,0
+Male,20_29,L,Eco,31,24
+Female,20_29,L,Business,0,2
+Female,20_29,L,Eco,0,0
+Female,20_29,L,Business,0,0
+Female,20_29,L,Eco,0,3
+Male,20_29,L,Eco,0,0
+Female,20_29,NL,Business,5,0
+Female,20_29,NL,Business,76,69
+Male,20_29,L,Business,0,0
+Male,30_39,NL,Business,22,1
+Male,30_39,L,Eco,0,0
+Female,30_39,NL,Business,17,4
+Male,30_39,L,Business,16,0
+Female,30_39,L,Eco,16,13
+Male,30_39,L,Eco,0,4
+Female,30_39,L,Business,0,0
+Male,30_39,L,Eco,0,0
+Male,30_39,NL,Business,119,116
+Male,30_39,NL,Business,0,0
+Female,30_39,L,Eco,0,1
+Male,30_39,NL,Eco,0,0
+Male,30_39,L,Business,0,0
+Male,30_39,NL,Eco,0,0
+Male,30_39,NL,Eco,1,0
+Male,30_39,NL,Eco,1,0
+Female,30_39,L,Business,14,44
+Male,30_39,L,Business,0,0
+Male,30_39,L,Eco,0,0
+Male,30_39,NL,Business,2,50
+Female,30_39,L,Eco,1,0
+Female,30_39,L,Business,0,0
+Female,30_39,L,Business,0,0
+Female,30_39,NL,Eco,92,86
+Male,30_39,NL,Eco,0,0
+Female,30_39,L,Eco,0,0
+Male,30_39,NL,Business,0,0
+Male,30_39,L,Business,5,1
+Male,30_39,L,Eco,43,36
+Male,30_39,L,Business,0,4
+Male,30_39,L,Business,0,5
+Female,30_39,L,Business,0,0
+Female,30_39,L,Eco,0,0
+Female,30_39,NL,Business,71,47
+Male,30_39,NL,Eco,0,0
+Male,30_39,NL,Business,0,0
+Male,30_39,NL,Eco,0,6
+Male,30_39,L,Business,10,5
+Male,30_39,L,Business,13,8
+Female,30_39,NL,Business,0,10
+Male,30_39,NL,Eco,80,66
+Male,30_39,L,Business,0,0
+Female,30_39,NL,Business,0,0
+Female,30_39,L,Business,11,8
+Female,30_39,L,Business,0,0
+Female,30_39,NL,Business,0,0
+Male,30_39,NL,Business,0,0
+Female,30_39,NL,Business,0,0
+Male,30_39,NL,Business,0,0
+Female,30_39,NL,Business,0,10
+Female,30_39,L,Business,0,0
+Female,30_39,NL,Business,31,18
+Female,30_39,NL,Business,0,0
+Male,30_39,L,Business,45,51
+Male,30_39,L,Business,0,0
+Female,30_39,L,Business,8,22
+Male,30_39,L,Business,0,0
+Male,30_39,L,Business,7,0
+Male,30_39,NL,Eco,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,NL,Business,1,0
+Male,30_39,NL,Business,0,0
+Female,30_39,L,Eco,0,0
+Male,30_39,L,Business,41,22
+Female,30_39,NL,Eco,0,0
+Female,30_39,L,Business,0,0
+Female,30_39,L,Business,0,0
+Female,30_39,NL,Business,7,0
+Female,30_39,L,Eco,0,0
+Female,30_39,L,Business,4,9
+Female,30_39,L,Business,34,38
+Female,30_39,NL,Business,112,117
+Female,30_39,L,Business,60,61
+Male,30_39,NL,Business,61,51
+Female,30_39,L,Business,0,0
+Female,30_39,L,Business,74,65
+Male,30_39,L,Business,0,5
+Male,30_39,NL,Business,0,7
+Male,30_39,NL,Eco,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,NL,Business,6,5
+Female,30_39,NL,Eco,0,0
+Female,30_39,L,Business,13,12
+Female,30_39,L,Business,0,2
+Male,30_39,L,Eco,7,0
+Male,30_39,NL,Eco,0,1
+Male,30_39,L,Eco,67,44
+Male,30_39,NL,Business,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,L,Business,0,0
+Female,30_39,NL,Business,16,0
+Male,30_39,L,Business,7,2
+Male,30_39,NL,Business,0,1
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,3
+Male,40_49,L,Eco,1,0
+Female,40_49,L,Business,8,7
+Male,40_49,NL,Business,0,0
+Female,40_49,NL,Eco,10,19
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,5
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,NL,Eco,166,167
+Male,40_49,L,Business,3,0
+Female,40_49,NL,Eco,32,24
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,NL,Business,1,0
+Female,40_49,L,Business,0,5
+Male,40_49,NL,Business,32,20
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Eco,10,2
+Female,40_49,NL,Business,0,0
+Female,40_49,L,Business,4,0
+Male,40_49,NL,Business,0,4
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,12,6
+Male,40_49,L,Business,0,6
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,13,17
+Male,40_49,L,Business,0,6
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,NL,Eco,0,1
+Female,40_49,NL,Business,1,0
+Male,40_49,L,Business,133,133
+Female,40_49,L,Business,0,19
+Male,40_49,L,Business,2,0
+Female,40_49,L,Business,48,46
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,9,9
+Female,40_49,L,Eco,28,41
+Male,40_49,L,Business,4,23
+Male,40_49,NL,Business,0,0
+Male,40_49,NL,Business,0,0
+Female,40_49,L,Eco,0,0
+Male,40_49,L,Business,14,0
+Female,40_49,NL,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,0
+Male,40_49,L,Business,27,56
+Male,40_49,NL,Business,92,76
+Female,40_49,L,Business,0,5
+Male,40_49,NL,Business,3,0
+Female,40_49,NL,Eco,0,2
+Male,40_49,L,Business,2,0
+Female,40_49,L,Business,0,0
+Female,40_49,NL,Business,6,15
+Male,40_49,NL,Business,42,22
+Female,40_49,L,Business,4,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,9,13
+Male,40_49,NL,Eco,0,0
+Male,40_49,NL,Eco,0,10
+Male,40_49,L,Business,31,78
+Male,40_49,L,Business,9,0
+Male,40_49,L,Business,0,0
+Female,40_49,NL,Eco,0,0
+Female,40_49,L,Eco,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,NL,Business,2,0
+Female,40_49,NL,Business,0,16
+Female,40_49,NL,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,NL,Business,0,0
+Male,40_49,NL,Business,41,27
+Female,40_49,L,Business,25,17
+Female,40_49,NL,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,3,19
+Male,40_49,NL,Business,11,0
+Female,40_49,NL,Business,0,0
+Female,40_49,NL,Business,0,0
+Female,40_49,L,Eco,1,17
+Male,40_49,NL,Eco,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,NL,Eco,59,58
+Male,40_49,NL,Eco,167,159
+Female,40_49,NL,Eco,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,NL,Eco,0,0
+Female,40_49,NL,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,7,0
+Male,40_49,NL,Business,2,4
+Female,40_49,NL,Eco,6,3
+Male,40_49,NL,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,50,48
+Male,40_49,L,Business,0,0
+Female,40_49,NL,Business,7,9
+Male,40_49,L,Business,3,0
+Male,40_49,L,Eco,0,0
+Female,40_49,NL,Business,0,0
+Male,40_49,NL,Eco,0,8
+Male,40_49,L,Business,101,110
+Male,40_49,L,Business,11,22
+Male,40_49,NL,Eco,17,7
+Male,40_49,NL,Business,14,44
+Male,40_49,L,Business,2,26
+Male,50_59,NL,Eco,0,0
+Male,50_59,L,Business,18,55
+Female,50_59,L,Business,0,0
+Male,50_59,NL,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,30,28
+Female,50_59,NL,Business,0,0
+Female,50_59,L,Eco,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,NL,Business,14,12
+Male,50_59,L,Business,6,0
+Female,50_59,L,Business,12,11
+Female,50_59,L,Business,12,0
+Female,50_59,L,Eco,0,0
+Female,50_59,L,Business,6,0
+Male,50_59,NL,Eco,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,NL,Business,0,5
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,2,3
+Female,50_59,NL,Eco,4,0
+Female,50_59,NL,Business,0,0
+Female,50_59,L,Business,2,0
+Male,50_59,NL,Business,0,8
+Female,50_59,NL,Business,0,0
+Male,50_59,NL,Business,0,3
+Female,50_59,NL,Eco,7,0
+Female,50_59,L,Eco,8,0
+Male,50_59,L,Business,9,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,4,27
+Male,50_59,L,Business,26,21
+Male,50_59,NL,Eco,0,0
+Female,50_59,L,Business,2,0
+Female,50_59,NL,Business,7,0
+Female,50_59,NL,Eco,0,0
+Female,50_59,NL,Eco,0,0
+Female,50_59,L,Business,3,0
+Female,50_59,L,Business,0,0
+Female,50_59,NL,Eco,0,0
+Female,50_59,NL,Business,0,0
+Male,50_59,NL,Business,0,0
+Female,50_59,NL,Business,44,66
+Female,50_59,L,Eco,26,32
+Female,50_59,NL,Eco,77,102
+Male,50_59,L,Business,4,0
+Male,50_59,NL,Business,0,0
+Male,50_59,NL,Business,5,0
+Male,50_59,L,Eco,3,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,NL,Business,0,0
+Male,50_59,L,Business,30,21
+Female,50_59,NL,Business,0,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,21,8
+Female,50_59,L,Business,0,0
+Male,50_59,NL,Business,0,0
+Male,50_59,L,Business,0,8
+Male,50_59,L,Business,0,0
+Male,50_59,L,Eco,0,0
+Female,50_59,NL,Business,0,0
+Female,50_59,L,Business,1,14
+Male,50_59,L,Business,1,0
+Female,50_59,NL,Eco,0,1
+Female,50_59,NL,Business,8,0
+Female,50_59,NL,Eco,12,2
+Male,50_59,L,Eco,0,0
+Male,50_59,NL,Business,0,2
+Female,50_59,L,Business,0,0
+Male,50_59,NL,Eco,0,0
+Male,50_59,NL,Eco,19,22
+Male,50_59,L,Business,3,0
+Male,50_59,L,Eco,57,51
+Female,50_59,NL,Business,0,0
+Male,50_59,NL,Eco,2,3
+Female,50_59,L,Business,0,2
+Female,50_59,L,Eco,0,0
+Female,50_59,NL,Business,0,0
+Male,50_59,L,Business,0,3
+Male,50_59,L,Business,0,0
+Female,50_59,NL,Business,71,85
+Male,50_59,NL,Eco,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,10,7
+Male,50_59,NL,Business,0,0
+Male,50_59,NL,Business,11,0
+Female,50_59,NL,Business,24,18
+Male,50_59,NL,Business,0,0
+Male,50_59,NL,Business,25,7
+Female,50_59,NL,Business,0,0
+Female,50_59,NL,Business,0,0
+Female,50_59,L,Eco,0,2
+Male,50_59,L,Eco,0,0
+Male,50_59,NL,Eco,22,10
+Male,50_59,NL,Business,9,15
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,8,5
+Female,50_59,L,Business,0,6
+Male,"[20, 30)",L,Eco,0,0
+Female,20_29,L,Business,59,70
+Female,20_29,L,Business,0,0
+Male,20_29,NL,Business,0,14
+Female,20_29,L,Business,52,52
+Female,20_29,NL,Business,0,6
+Female,20_29,NL,Business,0,0
+Male,20_29,NL,Business,0,0
+Male,20_29,L,Business,0,0
+Female,20_29,L,Business,0,0
+Female,20_29,L,Eco,0,0
+Female,20_29,NL,Business,5,0
+Male,20_29,NL,Business,0,0
+Male,20_29,L,Eco,9,0
+Female,20_29,L,Eco,0,0
+Female,20_29,L,Business,0,4
+Female,20_29,NL,Eco,15,19
+Male,20_29,L,Eco,1,0
+Male,20_29,NL,Business,0,0
+Female,20_29,NL,Business,0,0
+Female,20_29,L,Business,0,3
+Female,20_29,L,Business,0,14
+Female,20_29,L,Business,0,0
+Female,20_29,NL,Business,24,17
+Male,20_29,L,Business,17,11
+Male,20_29,L,Business,5,12
+Male,20_29,NL,Eco,0,0
+Female,20_29,L,Business,0,3
+Male,20_29,L,Eco,10,2
+Male,20_29,NL,Business,0,0
+Male,20_29,NL,Business,0,10
+Male,20_29,NL,Business,0,0
+Male,20_29,NL,Eco,185,190
+Male,20_29,L,Business,0,0
+Female,20_29,NL,Business,29,22
+Female,20_29,L,Business,8,8
+Male,20_29,L,Business,0,0
+Female,20_29,L,Business,17,0
+Male,20_29,L,Business,0,0
+Male,20_29,NL,Business,0,0
+Female,20_29,NL,Business,3,0
+Male,20_29,NL,Business,0,100
+Male,20_29,NL,Business,0,0
+Male,20_29,NL,Business,0,1
+Female,30_39,NL,Business,7,0
+Male,30_39,L,Business,0,0
+Female,30_39,L,Business,148,163
+Male,30_39,NL,Business,12,3
+Male,30_39,NL,Business,21,12
+Male,30_39,NL,Eco,0,0
+Female,30_39,L,Eco,0,0
+Male,30_39,NL,Business,3,0
+Male,30_39,NL,Business,107,92
+Male,30_39,L,Business,11,13
+Female,30_39,L,Eco,0,0
+Female,30_39,NL,Eco,0,0
+Female,30_39,L,Business,0,0
+Female,30_39,L,Business,2,0
+Female,30_39,NL,Business,18,0
+Female,30_39,L,Eco,0,0
+Female,30_39,NL,Business,6,0
+Female,30_39,L,Business,2,0
+Male,30_39,NL,Eco,15,0
+Male,30_39,NL,Business,0,0
+Male,30_39,NL,Business,4,0
+Male,30_39,L,Eco,0,0
+Female,30_39,L,Business,2,4
+Female,30_39,NL,Business,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,NL,Business,0,0
+Female,30_39,NL,Business,0,1
+Male,30_39,L,Business,0,0
+Male,30_39,L,Business,0,0
+Male,30_39,NL,Business,14,6
+Male,30_39,NL,Business,0,0
+Female,30_39,L,Business,51,45
+Male,30_39,L,Eco,0,0
+Male,30_39,L,Business,0,0
+Female,30_39,NL,Business,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,L,Business,2,8
+Female,30_39,L,Business,0,0
+Male,30_39,NL,Business,32,19
+Female,30_39,L,Business,0,0
+Male,30_39,NL,Business,4,8
+Female,30_39,NL,Eco,1,0
+Male,30_39,L,Eco,0,0
+Male,30_39,L,Business,0,0
+Female,30_39,L,Eco,0,0
+Male,30_39,NL,Eco,0,2
+Male,30_39,L,Business,0,0
+Male,30_39,L,Business,1,0
+Female,30_39,L,Business,0,0
+Male,30_39,NL,Business,0,0
+Female,30_39,L,Business,0,0
+Female,30_39,L,Eco,0,16
+Female,30_39,L,Business,26,25
+Female,30_39,NL,Business,0,0
+Female,30_39,NL,Business,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,NL,Eco,4,12
+Male,30_39,L,Eco,0,0
+Female,30_39,L,Eco,0,0
+Male,30_39,L,Business,6,0
+Male,30_39,L,Business,0,0
+Female,30_39,L,Business,0,1
+Male,30_39,NL,Business,0,0
+Female,30_39,L,Business,1,0
+Female,30_39,L,Business,161,163
+Female,30_39,L,Business,0,45
+Male,30_39,L,Business,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,L,Business,0,0
+Male,30_39,L,Business,9,20
+Male,30_39,NL,Eco,1,0
+Female,30_39,NL,Business,13,2
+Male,30_39,L,Business,0,0
+Female,30_39,NL,Business,0,0
+Male,30_39,L,Business,125,112
+Male,30_39,L,Eco,0,0
+Female,30_39,NL,Business,0,0
+Female,30_39,NL,Business,1,0
+Male,30_39,L,Business,0,0
+Male,30_39,L,Eco,0,0
+Female,30_39,L,Business,0,0
+Female,30_39,NL,Eco,0,0
+Male,30_39,NL,Business,0,0
+Male,30_39,L,Business,0,0
+Male,30_39,L,Business,0,4
+Female,30_39,NL,Business,19,12
+Male,30_39,L,Business,0,0
+Male,30_39,L,Business,0,0
+Female,30_39,L,Eco,0,0
+Male,30_39,L,Business,0,0
+Male,30_39,L,Business,0,0
+Female,30_39,NL,Eco,0,0
+Male,30_39,L,Eco,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,NL,Eco,6,0
+Male,30_39,L,Business,21,15
+Female,30_39,L,Business,22,11
+Female,30_39,L,Business,0,0
+Female,30_39,L,Business,0,0
+Female,30_39,L,Business,0,0
+Female,30_39,L,Eco,11,12
+Female,30_39,L,Business,0,0
+Female,30_39,NL,Eco,0,0
+Male,30_39,L,Business,39,50
+Male,30_39,L,Business,64,64
+Female,30_39,NL,Business,2,0
+Male,30_39,L,Business,133,140
+Female,30_39,NL,Eco,0,0
+Male,30_39,L,Business,0,3
+Male,30_39,NL,Eco,48,76
+Female,30_39,L,Business,15,26
+Female,30_39,NL,Eco,0,3
+Female,30_39,NL,Business,0,2
+Female,30_39,NL,Business,0,0
+Male,30_39,L,Business,0,0
+Male,30_39,L,Business,3,13
+Female,30_39,L,Business,0,0
+Female,30_39,L,Business,0,0
+Female,30_39,NL,Eco,0,0
+Female,30_39,L,Eco,2,0
+Male,30_39,NL,Eco,0,0
+Female,30_39,NL,Eco,0,0
+Female,30_39,NL,Business,0,0
+Female,30_39,NL,Business,0,0
+Male,30_39,L,Business,0,0
+Female,30_39,NL,Eco,0,0
+Female,30_39,L,Business,29,17
+Female,30_39,L,Business,0,0
+Male,30_39,NL,Business,51,42
+Male,30_39,L,Business,0,0
+Female,30_39,L,Business,13,12
+Male,30_39,L,Business,7,13
+Female,30_39,L,Business,3,16
+Male,30_39,NL,Eco,177,163
+Male,30_39,L,Eco,7,0
+Female,30_39,NL,Business,10,11
+Male,30_39,NL,Eco,0,0
+Male,30_39,L,Eco,0,0
+Female,30_39,NL,Business,130,135
+Male,30_39,NL,Business,72,70
+Female,30_39,L,Eco,0,4
+Male,30_39,NL,Business,4,0
+Male,30_39,L,Business,12,0
+Male,30_39,L,Eco,10,0
+Male,30_39,NL,Business,0,0
+Male,30_39,L,Business,0,0
+Female,30_39,L,Business,0,3
+Female,30_39,L,Business,0,14
+Female,30_39,L,Eco,0,0
+Male,30_39,NL,Eco,0,0
+Male,30_39,L,Business,0,0
+Male,30_39,NL,Business,9,8
+Female,30_39,L,Business,0,0
+Female,30_39,L,Eco,0,0
+Female,30_39,L,Eco,63,116
+Male,30_39,L,Business,0,14
+Female,30_39,NL,Business,0,0
+Female,30_39,L,Eco,0,1
+Male,30_39,L,Business,0,0
+Female,30_39,NL,Eco,0,0
+Male,30_39,L,Business,0,0
+Male,30_39,NL,Eco,18,33
+Female,30_39,NL,Business,9,24
+Male,30_39,L,Business,0,3
+Female,30_39,L,Business,99,77
+Male,30_39,L,Eco,0,0
+Female,30_39,NL,Eco,0,26
+Female,30_39,L,Business,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,L,Business,0,0
+Female,30_39,NL,Business,0,5
+Female,30_39,L,Business,0,0
+Female,30_39,NL,Business,0,27
+Female,30_39,L,Business,140,129
+Male,30_39,NL,Eco,34,38
+Male,30_39,L,Business,22,3
+Female,30_39,NL,Business,6,12
+Female,30_39,NL,Business,3,42
+Female,30_39,L,Eco,0,0
+Female,30_39,L,Business,0,0
+Male,30_39,L,Eco,0,0
+Female,40_49,L,Business,5,7
+Male,40_49,L,Eco,2,0
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,89,91
+Female,40_49,L,Business,4,0
+Male,40_49,L,Eco,0,0
+Male,40_49,L,Business,14,18
+Male,40_49,L,Eco,56,48
+Female,40_49,L,Eco,0,25
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Business,13,9
+Male,40_49,L,Business,11,8
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,NL,Business,0,0
+Female,40_49,L,Business,11,5
+Male,40_49,NL,Eco,0,0
+Female,40_49,L,Business,14,11
+Male,40_49,L,Business,0,7
+Female,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,0
+Female,40_49,NL,Business,0,7
+Female,40_49,NL,Eco,0,0
+Female,40_49,L,Business,0,14
+Male,40_49,L,Business,0,7
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,13,0
+Male,40_49,NL,Business,0,0
+Female,40_49,L,Business,12,0
+Female,40_49,L,Business,4,0
+Female,40_49,L,Business,22,45
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,3
+Male,40_49,L,Business,18,17
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,2,3
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Eco,80,75
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Eco,0,0
+Male,40_49,L,Business,20,1
+Male,40_49,NL,Business,24,26
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Eco,61,52
+Male,40_49,L,Business,5,0
+Male,40_49,L,Business,10,20
+Female,40_49,L,Eco,1,0
+Female,40_49,L,Business,65,59
+Female,40_49,L,Eco,0,2
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,29,29
+Male,40_49,L,Business,9,6
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,12,103
+Male,40_49,L,Business,15,2
+Female,40_49,L,Business,43,31
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,95,96
+Male,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,0
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Business,9,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,18
+Male,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,0
+Male,40_49,L,Business,3,0
+Female,40_49,L,Eco,0,0
+Male,40_49,L,Eco,0,0
+Male,40_49,L,Business,5,0
+Female,40_49,L,Business,233,256
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,33,24
+Male,40_49,L,Business,8,0
+Female,40_49,NL,Business,0,8
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,9,0
+Female,40_49,L,Business,1,0
+Male,40_49,L,Eco,2,74
+Female,40_49,L,Business,0,0
+Female,40_49,L,Eco,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,600,589
+Female,40_49,L,Business,2,15
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,75,86
+Female,40_49,L,Business,317,324
+Male,40_49,L,Business,14,11
+Female,40_49,L,Business,0,0
+Male,40_49,L,Eco,10,9
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,16,5
+Female,40_49,L,Eco,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Business,12,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Eco,5,13
+Female,40_49,L,Eco,0,0
+Male,40_49,L,Business,0,34
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,11,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,3
+Female,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,0
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,18,20
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Eco,0,0
+Male,40_49,L,Business,151,177
+Female,40_49,L,Business,1,0
+Female,40_49,L,Business,2,0
+Female,40_49,L,Eco,1,0
+Male,40_49,L,Business,2,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,NL,Business,9,4
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,84,80
+Female,40_49,L,Eco,24,15
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,NL,Business,98,64
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Eco,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Eco,5,0
+Male,40_49,L,Business,0,2
+Male,40_49,L,Business,2,13
+Female,40_49,L,Business,1,0
+Female,40_49,L,Business,2,0
+Female,40_49,L,Eco,0,0
+Female,40_49,L,Business,11,3
+Female,40_49,L,Business,0,0
+Female,40_49,NL,Business,2,0
+Male,40_49,L,Business,23,8
+Male,40_49,NL,Business,28,10
+Female,40_49,L,Business,56,58
+Female,40_49,L,Business,53,51
+Female,40_49,L,Business,39,55
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,5,8
+Female,40_49,L,Business,341,334
+Female,40_49,L,Eco,5,15
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,3,0
+Female,40_49,L,Eco,0,12
+Male,40_49,L,Business,15,17
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,5,13
+Male,40_49,L,Business,0,1
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,13,0
+Female,40_49,L,Business,170,164
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,14,1
+Male,40_49,L,Eco,6,5
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,17,6
+Female,40_49,L,Eco,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,NL,Business,0,45
+Female,40_49,L,Business,3,3
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,2,47
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,6,0
+Male,40_49,L,Business,29,11
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,3,0
+Male,40_49,L,Business,27,21
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,0
+Male,40_49,L,Business,21,41
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,10,1
+Male,40_49,NL,Eco,0,0
+Male,40_49,L,Business,1,2
+Male,40_49,NL,Eco,0,19
+Male,40_49,NL,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,25,23
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,124,111
+Female,40_49,NL,Eco,0,0
+Female,40_49,L,Business,18,16
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,4,2
+Male,40_49,L,Eco,0,0
+Male,40_49,L,Business,0,4
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,8,0
+Female,40_49,NL,Business,4,22
+Male,40_49,L,Business,11,8
+Male,40_49,L,Business,23,26
+Male,40_49,L,Eco,0,0
+Female,40_49,NL,Business,7,0
+Male,40_49,NL,Business,23,11
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,45,43
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,18
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,6,15
+Female,40_49,L,Business,0,7
+Male,40_49,L,Business,8,0
+Female,40_49,L,Eco,3,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,4,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,26
+Male,40_49,L,Eco,0,4
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,137,135
+Male,40_49,L,Business,0,4
+Female,40_49,L,Business,0,26
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,36,38
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,4,0
+Male,40_49,L,Business,0,2
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Eco,13,0
+Female,40_49,L,Business,3,1
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,2
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,3,38
+Male,40_49,L,Eco,4,1
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,NL,Business,2,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,6,19
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,4
+Male,40_49,NL,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,NL,Business,25,22
+Male,40_49,L,Business,29,31
+Male,40_49,L,Eco,0,1
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,25,34
+Male,40_49,L,Business,4,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Eco,0,0
+Male,40_49,NL,Business,25,7
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,6
+Female,40_49,L,Eco,5,14
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,4,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Eco,5,0
+Female,40_49,NL,Business,0,0
+Female,40_49,L,Business,16,19
+Male,40_49,L,Business,3,5
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,34
+Female,40_49,L,Business,14,0
+Female,40_49,L,Eco,0,0
+Male,40_49,L,Eco,77,74
+Male,40_49,L,Business,0,11
+Female,40_49,L,Business,2,0
+Male,40_49,L,Business,21,1
+Female,40_49,L,Business,0,0
+Male,40_49,NL,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,16,3
+Female,40_49,L,Business,15,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,20
+Female,40_49,L,Eco,0,0
+Female,40_49,L,Eco,0,0
+Male,40_49,L,Business,220,238
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,15,0
+Female,40_49,L,Business,7,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Business,2,3
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,12
+Female,40_49,L,Business,13,8
+Male,40_49,L,Business,33,17
+Male,40_49,L,Eco,0,0
+Male,40_49,L,Business,16,42
+Male,40_49,NL,Business,21,12
+Female,40_49,L,Business,23,3
+Male,40_49,L,Business,1,0
+Male,40_49,L,Business,20,8
+Female,40_49,L,Business,3,8
+Male,40_49,L,Business,0,0
+Male,40_49,L,Business,11,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,0,0
+Male,40_49,L,Eco,0,0
+Female,40_49,L,Eco,3,0
+Female,40_49,NL,Business,88,79
+Female,40_49,L,Business,0,0
+Female,40_49,L,Eco,9,25
+Male,40_49,L,Business,0,0
+Female,40_49,L,Business,0,0
+Male,40_49,L,Business,17,8
+Male,40_49,L,Business,0,0
+Female,40_49,NL,Business,2,0
+Female,40_49,L,Business,0,0
+Female,50_59,L,Business,14,1
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,4
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,25,20
+Female,50_59,L,Business,3,5
+Female,50_59,L,Eco,0,0
+Male,50_59,L,Business,75,83
+Male,50_59,NL,Business,0,0
+Female,50_59,L,Eco,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,15,11
+Female,50_59,L,Business,0,1
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,13,0
+Male,50_59,L,Eco,68,63
+Male,50_59,L,Business,24,11
+Female,50_59,L,Business,0,0
+Female,50_59,L,Eco,0,8
+Male,50_59,L,Business,52,66
+Male,50_59,L,Business,61,78
+Male,50_59,L,Business,0,0
+Female,50_59,L,Eco,17,7
+Male,50_59,L,Business,0,0
+Female,50_59,L,Eco,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,32,15
+Male,50_59,L,Business,187,187
+Male,50_59,L,Business,0,11
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,18,1
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,2,0
+Female,50_59,L,Business,25,21
+Female,50_59,L,Business,5,4
+Female,50_59,L,Business,2,0
+Male,50_59,L,Business,0,1
+Female,50_59,L,Business,0,2
+Male,50_59,L,Eco,0,0
+Female,50_59,L,Business,0,2
+Male,50_59,L,Business,9,13
+Female,50_59,L,Eco,0,11
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,0,3
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,465,493
+Female,50_59,L,Business,18,25
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,1,0
+Female,50_59,NL,Eco,0,0
+Male,50_59,L,Eco,0,0
+Female,50_59,L,Eco,25,40
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,31,31
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,NL,Business,0,1
+Male,50_59,L,Business,107,98
+Female,50_59,L,Business,21,17
+Female,50_59,L,Business,5,1
+Female,50_59,L,Business,0,0
+Male,50_59,L,Eco,0,0
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,5,0
+Male,50_59,NL,Business,0,0
+Male,50_59,L,Business,0,0
+Male,50_59,L,Eco,0,4
+Male,50_59,L,Business,0,0
+Male,50_59,NL,Eco,16,15
+Female,50_59,L,Business,0,0
+Male,50_59,L,Eco,4,7
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,10,0
+Male,50_59,L,Business,0,3
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,3
+Female,50_59,L,Business,42,46
+Male,50_59,L,Business,0,18
+Male,50_59,L,Eco,73,55
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,32,18
+Male,50_59,L,Business,33,24
+Female,50_59,L,Eco,19,2
+Female,50_59,L,Eco,0,0
+Male,50_59,L,Eco,62,51
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,10,10
+Female,50_59,L,Eco,0,0
+Female,50_59,L,Business,0,3
+Male,50_59,L,Business,0,0
+Female,50_59,L,Eco,0,0
+Male,50_59,NL,Eco,0,18
+Female,50_59,NL,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,0,6
+Male,50_59,L,Business,0,3
+Male,50_59,L,Business,4,0
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,1
+Male,50_59,L,Business,3,0
+Female,50_59,L,Eco,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,25,20
+Female,50_59,L,Business,7,0
+Male,50_59,L,Business,0,21
+Male,50_59,L,Business,0,3
+Male,50_59,L,Business,7,23
+Female,50_59,NL,Business,9,8
+Male,50_59,L,Eco,0,0
+Male,50_59,NL,Business,0,0
+Male,50_59,L,Business,14,2
+Male,50_59,L,Business,0,2
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,1,12
+Female,50_59,L,Business,0,12
+Male,50_59,NL,Eco,12,0
+Male,50_59,L,Eco,0,0
+Female,50_59,L,Business,20,13
+Female,50_59,L,Business,33,38
+Male,50_59,L,Business,12,11
+Female,50_59,L,Business,25,17
+Male,50_59,L,Business,0,0
+Female,50_59,L,Eco,194,188
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,2,0
+Female,50_59,L,Business,0,10
+Female,50_59,L,Eco,0,0
+Male,50_59,L,Business,9,15
+Male,50_59,L,Business,49,30
+Female,50_59,L,Eco,0,0
+Female,50_59,L,Business,14,20
+Female,50_59,L,Eco,0,0
+Female,50_59,L,Business,1,0
+Male,50_59,NL,Business,76,83
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,82,89
+Female,50_59,L,Business,9,0
+Male,50_59,L,Business,8,0
+Female,50_59,L,Eco,0,0
+Male,50_59,L,Business,13,2
+Female,50_59,L,Business,7,3
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Eco,0,2
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,1
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Eco,0,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,13
+Male,50_59,NL,Business,0,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,5
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,1,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,4
+Male,50_59,L,Business,0,0
+Female,50_59,L,Eco,120,122
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,11,2
+Male,50_59,L,Eco,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,3
+Male,50_59,L,Business,8,14
+Male,50_59,L,Business,0,7
+Female,50_59,L,Business,9,3
+Female,50_59,L,Business,0,0
+Male,50_59,L,Eco,0,8
+Male,50_59,L,Business,0,0
+Male,50_59,NL,Business,0,0
+Female,50_59,L,Eco,0,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,68,81
+Male,50_59,NL,Eco,0,0
+Female,50_59,L,Business,0,17
+Male,50_59,L,Business,14,14
+Female,50_59,L,Business,11,34
+Female,50_59,L,Business,2,0
+Female,50_59,L,Business,26,37
+Male,50_59,L,Business,0,0
+Male,50_59,L,Eco,0,0
+Male,50_59,L,Business,77,68
+Female,50_59,L,Business,1,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Eco,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,15,31
+Female,50_59,L,Business,60,70
+Male,50_59,L,Business,11,13
+Male,50_59,L,Business,5,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,12,23
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,68,69
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,54,43
+Female,50_59,L,Business,5,0
+Male,50_59,L,Business,67,80
+Male,50_59,L,Business,0,0
+Female,50_59,NL,Business,0,0
+Male,50_59,L,Business,0,10
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,10,8
+Female,50_59,L,Eco,0,0
+Female,50_59,L,Business,88,84
+Male,50_59,L,Business,0,4
+Male,50_59,L,Business,0,0
+Female,50_59,NL,Business,0,0
+Male,50_59,L,Business,0,20
+Female,50_59,L,Business,9,2
+Male,50_59,L,Business,0,3
+Male,50_59,NL,Business,8,8
+Male,50_59,L,Eco,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,6,2
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,12,0
+Male,50_59,L,Eco,0,0
+Male,50_59,L,Business,6,3
+Male,50_59,L,Business,0,0
+Female,50_59,NL,Business,0,0
+Male,50_59,L,Business,6,0
+Female,50_59,L,Business,0,0
+Female,50_59,NL,Business,5,3
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,67,65
+Male,50_59,L,Business,11,17
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,47,51
+Female,50_59,L,Business,5,1
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,5,14
+Female,50_59,L,Business,167,151
+Male,50_59,L,Business,0,6
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,4,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,0,6
+Female,50_59,L,Business,151,138
+Male,50_59,L,Eco,25,15
+Female,50_59,L,Eco,18,18
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,9,3
+Female,50_59,L,Business,0,27
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,19,15
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,1,3
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,9,1
+Male,50_59,L,Business,10,2
+Male,50_59,NL,Business,0,3
+Male,50_59,L,Eco,0,0
+Male,50_59,L,Business,7,9
+Male,50_59,L,Business,89,80
+Female,50_59,L,Business,18,16
+Female,50_59,L,Business,12,12
+Female,50_59,L,Business,131,125
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,4
+Male,50_59,NL,Business,11,0
+Female,50_59,L,Business,25,18
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,1,0
+Male,50_59,L,Business,3,0
+Female,50_59,L,Business,8,0
+Male,50_59,L,Business,10,0
+Male,50_59,L,Eco,0,0
+Female,50_59,L,Business,9,12
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,7,26
+Male,50_59,L,Business,51,36
+Female,50_59,L,Business,0,0
+Female,50_59,L,Business,8,0
+Female,50_59,L,Business,5,0
+Male,50_59,L,Business,11,6
+Female,50_59,NL,Eco,0,0
+Male,50_59,L,Business,5,5
+Female,50_59,L,Business,7,3
+Male,50_59,L,Business,8,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,9,4
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,7
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,3,0
+Male,50_59,L,Business,0,0
+Female,50_59,L,Business,0,0
+Male,50_59,L,Business,0,0
+Male,50_59,L,Business,13,8
+Female,50_59,NL,Business,0,0
+Female,50_59,L,Business,9,12
+Male,50_59,L,Business,6,0
+Male,"[40, 50)",L,Business,61,60
+Male,"[40, 50)",L,Business,2,0
+Female,"[40, 50)",L,Business,2,9
+Female,"[40, 50)",L,Business,38,39
+Male,"[40, 50)",L,Business,11,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,2
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,1
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Eco,18,9
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,101,92
+Female,"[40, 50)",L,Business,0,4
+Female,"[40, 50)",L,Business,4,3
+Female,"[40, 50)",L,Business,17,41
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,17,0
+Male,"[40, 50)",L,Business,15,12
+Male,"[40, 50)",L,Business,0,4
+Female,"[40, 50)",L,Business,60,45
+Male,"[40, 50)",NL,Eco,0,8
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,12
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,2
+Female,"[40, 50)",L,Business,50,31
+Female,"[40, 50)",L,Business,44,29
+Male,"[40, 50)",L,Business,3,0
+Female,"[40, 50)",L,Business,68,58
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,9
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,24,11
+Female,"[40, 50)",NL,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,7,22
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",NL,Eco,0,2
+Male,"[40, 50)",L,Business,27,37
+Female,"[40, 50)",L,Eco,6,14
+Female,"[40, 50)",L,Business,15,0
+Female,"[40, 50)",L,Business,39,33
+Male,"[40, 50)",L,Eco,12,21
+Female,"[40, 50)",L,Business,1,17
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,50,27
+Female,"[40, 50)",L,Business,1,0
+Female,"[40, 50)",L,Business,43,57
+Female,"[40, 50)",L,Eco,4,13
+Female,"[40, 50)",L,Business,2,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,19
+Female,"[40, 50)",L,Business,3,8
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,182,221
+Male,"[40, 50)",L,Business,35,38
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,10,1
+Male,"[40, 50)",L,Business,4,3
+Male,"[40, 50)",L,Business,0,7
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,12,10
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,37,44
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,6
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,12,10
+Male,"[40, 50)",L,Eco,0,11
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,3,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,51,51
+Female,"[40, 50)",L,Business,14,0
+Female,"[40, 50)",L,Business,13,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,4
+Male,"[40, 50)",L,Business,0,7
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,12,0
+Female,"[40, 50)",L,Business,26,10
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,24,25
+Male,"[40, 50)",L,Business,8,3
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,7,7
+Male,"[40, 50)",L,Business,0,4
+Female,"[40, 50)",L,Business,17,25
+Male,"[40, 50)",L,Business,0,10
+Male,"[40, 50)",L,Business,41,56
+Male,"[40, 50)",L,Business,16,5
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,21,13
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,215,221
+Female,"[40, 50)",L,Business,14,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,30,41
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,7,0
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,5
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,14,22
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,8,57
+Female,"[40, 50)",L,Business,0,25
+Female,"[40, 50)",L,Business,20,6
+Female,"[40, 50)",L,Eco,9,0
+Male,"[40, 50)",L,Business,25,25
+Female,"[40, 50)",L,Business,4,0
+Female,"[40, 50)",L,Business,6,9
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,150,128
+Male,"[40, 50)",L,Business,0,1
+Female,"[40, 50)",L,Business,74,74
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,46,108
+Male,"[40, 50)",L,Business,9,0
+Female,"[40, 50)",NL,Business,3,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,7,20
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,3,16
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,18,14
+Female,"[40, 50)",L,Business,13,7
+Male,"[40, 50)",L,Business,28,22
+Female,"[40, 50)",L,Eco,0,2
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,2
+Female,"[40, 50)",NL,Business,5,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,50,38
+Female,"[40, 50)",L,Eco,117,100
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,0
+Female,"[40, 50)",L,Business,0,13
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",NL,Business,0,5
+Male,"[40, 50)",L,Business,0,12
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,10
+Female,"[40, 50)",L,Business,0,6
+Male,"[40, 50)",L,Business,18,7
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,21,19
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,20,26
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,5,3
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",NL,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,111,115
+Female,"[40, 50)",L,Business,72,113
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,8,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,13
+Male,"[40, 50)",L,Business,167,159
+Male,"[40, 50)",L,Business,10,9
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,36,30
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,27
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,5,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,8,0
+Male,"[40, 50)",L,Business,10,13
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,61,123
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,11,1
+Male,"[40, 50)",L,Business,18,5
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",NL,Business,1,0
+Male,"[40, 50)",NL,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,9,0
+Female,"[40, 50)",L,Business,1,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,22,16
+Female,"[40, 50)",L,Business,7,0
+Female,"[40, 50)",L,Business,57,58
+Male,"[40, 50)",L,Business,0,1
+Male,"[40, 50)",L,Business,0,3
+Female,"[40, 50)",L,Business,0,6
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,8,11
+Female,"[40, 50)",L,Eco,6,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,3
+Male,"[40, 50)",L,Business,10,0
+Female,"[40, 50)",NL,Business,8,12
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,19,12
+Female,"[40, 50)",L,Business,13,13
+Male,"[40, 50)",NL,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,8
+Female,"[40, 50)",L,Business,24,26
+Male,"[40, 50)",L,Business,11,13
+Female,"[40, 50)",L,Business,126,115
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,34,36
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,8,5
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,1
+Female,"[40, 50)",L,Business,0,2
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,30,12
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,13,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",NL,Business,132,124
+Female,"[40, 50)",L,Eco,1,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,4,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,11,8
+Male,"[40, 50)",L,Eco,11,11
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,5
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,27,26
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,4,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,2,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,13,28
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",NL,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,1,6
+Male,"[40, 50)",L,Business,5,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",NL,Business,76,95
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,64,54
+Female,"[40, 50)",L,Business,22,17
+Female,"[40, 50)",L,Business,0,4
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,15,5
+Female,"[40, 50)",L,Business,11,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,5,8
+Male,"[40, 50)",L,Eco,3,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,53,57
+Male,"[40, 50)",L,Business,2,0
+Male,"[40, 50)",L,Eco,0,2
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,18,12
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,9,0
+Male,"[40, 50)",L,Business,5,0
+Female,"[40, 50)",L,Eco,5,4
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,21,14
+Male,"[40, 50)",L,Business,0,20
+Male,"[40, 50)",L,Business,14,6
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,3,11
+Female,"[40, 50)",L,Business,15,3
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,26,35
+Female,"[40, 50)",L,Business,0,11
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",NL,Business,0,0
+Male,"[40, 50)",L,Eco,0,8
+Female,"[40, 50)",L,Business,97,90
+Female,"[40, 50)",L,Business,21,11
+Female,"[40, 50)",L,Business,20,9
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,7,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,74,58
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,80,125
+Female,"[40, 50)",L,Business,16,24
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,62,49
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,1,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,55,60
+Male,"[40, 50)",L,Business,1,7
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,0
+Female,"[40, 50)",L,Business,50,55
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,6,88
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,247,254
+Female,"[40, 50)",L,Business,2,6
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,11
+Female,"[40, 50)",L,Business,9,17
+Female,"[40, 50)",L,Business,26,9
+Male,"[40, 50)",L,Business,17,6
+Male,"[40, 50)",L,Business,46,67
+Male,"[40, 50)",L,Business,0,2
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,3,0
+Male,"[40, 50)",L,Business,15,4
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,14,38
+Female,"[40, 50)",L,Business,6,0
+Male,"[40, 50)",L,Business,13,15
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,10
+Female,"[40, 50)",L,Business,68,68
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,20,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,22,7
+Male,"[40, 50)",L,Business,1,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",NL,Business,150,149
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,2,2
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,38,24
+Female,"[40, 50)",L,Business,25,18
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,8,4
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,7
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,17,0
+Male,"[40, 50)",L,Business,72,64
+Male,"[40, 50)",L,Business,28,81
+Female,"[40, 50)",L,Business,0,5
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,5,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,13,23
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,4
+Male,"[40, 50)",L,Business,31,27
+Female,"[40, 50)",L,Business,28,28
+Male,"[40, 50)",L,Business,2,4
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,8,7
+Female,"[40, 50)",L,Business,26,36
+Male,"[40, 50)",L,Business,3,0
+Female,"[40, 50)",L,Business,3,0
+Male,"[40, 50)",L,Business,1,5
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,44,30
+Female,"[40, 50)",L,Eco,134,122
+Male,"[40, 50)",L,Business,14,10
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,23
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,0
+Male,"[40, 50)",L,Business,4,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,12
+Male,"[40, 50)",L,Business,0,6
+Male,"[40, 50)",L,Eco,48,49
+Female,"[40, 50)",L,Business,0,5
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,33,23
+Male,"[40, 50)",L,Business,12,0
+Female,"[40, 50)",L,Eco,2,4
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,11,0
+Male,"[40, 50)",L,Business,8,28
+Male,"[40, 50)",L,Business,14,24
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,17,9
+Female,"[40, 50)",L,Business,5,0
+Male,"[40, 50)",NL,Business,25,7
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,7,0
+Female,"[40, 50)",L,Business,27,36
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,12,7
+Female,"[40, 50)",L,Eco,12,4
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,21,38
+Female,"[40, 50)",L,Business,29,28
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,6
+Female,"[40, 50)",L,Eco,6,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,9
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,20,16
+Male,"[40, 50)",L,Business,0,5
+Male,"[40, 50)",L,Eco,32,30
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,3
+Male,"[40, 50)",L,Business,2,2
+Male,"[40, 50)",NL,Business,15,10
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,25,13
+Male,"[40, 50)",L,Business,0,2
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,5,2
+Male,"[40, 50)",L,Business,9,1
+Male,"[40, 50)",L,Business,102,99
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,2,5
+Male,"[40, 50)",L,Business,34,24
+Male,"[40, 50)",L,Business,14,14
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,22,12
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,14,24
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,67,79
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",NL,Business,48,30
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,29,29
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,11,0
+Male,"[40, 50)",L,Business,69,72
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,50,38
+Male,"[40, 50)",L,Business,0,1
+Male,"[40, 50)",L,Eco,0,15
+Male,"[40, 50)",L,Business,34,39
+Male,"[40, 50)",L,Business,3,6
+Female,"[40, 50)",L,Business,0,6
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,16,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,108,107
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,8,0
+Female,"[40, 50)",L,Eco,0,7
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,5
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,10,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,10,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,18
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,7,0
+Female,"[40, 50)",L,Business,1,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,1
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,12
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,30,20
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,4,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,34,9
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,21,34
+Female,"[40, 50)",L,Business,68,73
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,1
+Female,"[40, 50)",L,Business,0,10
+Female,"[40, 50)",L,Business,66,55
+Male,"[40, 50)",L,Business,19,7
+Male,"[40, 50)",L,Business,0,7
+Male,"[40, 50)",L,Business,3,14
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,15,21
+Male,"[40, 50)",L,Business,5,0
+Male,"[40, 50)",L,Business,2,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,43
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,3,9
+Male,"[40, 50)",L,Business,62,60
+Male,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,166,168
+Male,"[40, 50)",L,Business,17,20
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,16,5
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",NL,Business,0,12
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,1
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,12,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,8,15
+Male,"[40, 50)",L,Business,19,6
+Female,"[40, 50)",NL,Business,78,116
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,2,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",NL,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,9,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,2
+Female,"[40, 50)",L,Business,0,3
+Male,"[40, 50)",L,Business,52,86
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,1
+Male,"[40, 50)",L,Business,25,17
+Female,"[40, 50)",NL,Business,0,0
+Female,"[40, 50)",L,Business,0,4
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,37,31
+Female,"[40, 50)",NL,Business,53,70
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,29,5
+Female,"[40, 50)",L,Business,7,0
+Male,"[40, 50)",L,Business,6,0
+Male,"[40, 50)",L,Business,17,9
+Male,"[40, 50)",L,Business,174,180
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,87,90
+Male,"[40, 50)",L,Business,3,7
+Male,"[40, 50)",L,Eco,22,4
+Male,"[40, 50)",L,Business,27,44
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,30,15
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,60,52
+Male,"[40, 50)",L,Business,123,117
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,18
+Male,"[40, 50)",L,Business,0,13
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,41,24
+Male,"[40, 50)",L,Business,9,3
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,0
+Female,"[40, 50)",L,Business,19,22
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,11,17
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,14
+Female,"[40, 50)",NL,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,24,30
+Female,"[40, 50)",L,Business,8,14
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,7
+Male,"[40, 50)",L,Business,16,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,13,20
+Male,"[40, 50)",L,Business,0,4
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,8,2
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,4
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,36,42
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,1,6
+Male,"[40, 50)",L,Business,1,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,40,30
+Male,"[40, 50)",L,Business,42,68
+Male,"[40, 50)",L,Business,0,3
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,35,31
+Female,"[40, 50)",L,Eco,0,2
+Male,"[40, 50)",L,Business,0,28
+Female,"[40, 50)",L,Business,3,0
+Female,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Eco,100,91
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,29,44
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,7,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Eco,0,0
+Male,"[40, 50)",L,Business,1,2
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,16,19
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,1,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,105,94
+Male,"[40, 50)",L,Business,43,39
+Female,"[40, 50)",L,Business,23,15
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,25,19
+Female,"[40, 50)",L,Business,181,174
+Female,"[40, 50)",L,Business,113,123
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,3,16
+Male,"[40, 50)",L,Business,50,57
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,55,49
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,1
+Female,"[40, 50)",NL,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,3,0
+Female,"[40, 50)",L,Business,5,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,5,0
+Female,"[40, 50)",L,Business,2,21
+Female,"[40, 50)",L,Eco,3,7
+Male,"[40, 50)",L,Business,2,5
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,65,53
+Female,"[40, 50)",L,Eco,12,25
+Female,"[40, 50)",L,Eco,15,16
+Female,"[40, 50)",L,Business,38,45
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,3,0
+Male,"[40, 50)",L,Business,0,2
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,10
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,12,14
+Male,"[40, 50)",L,Business,0,13
+Male,"[40, 50)",L,Business,0,11
+Female,"[40, 50)",L,Business,128,148
+Male,"[40, 50)",L,Eco,12,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,12,9
+Female,"[40, 50)",L,Business,0,1
+Male,"[40, 50)",L,Business,63,120
+Female,"[40, 50)",L,Business,7,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Eco,0,14
+Male,"[40, 50)",L,Business,84,83
+Male,"[40, 50)",L,Business,11,6
+Male,"[40, 50)",L,Business,18,16
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,14,10
+Male,"[40, 50)",L,Business,51,47
+Female,"[40, 50)",L,Business,108,100
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,26,18
+Male,"[40, 50)",L,Business,9,4
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,4,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,1,4
+Female,"[40, 50)",L,Business,5,27
+Female,"[40, 50)",L,Business,5,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,31,12
+Male,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,5
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",NL,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Female,"[40, 50)",L,Eco,5,0
+Male,"[40, 50)",L,Business,23,5
+Female,"[40, 50)",L,Business,0,0
+Male,"[40, 50)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,11,0
+Female,"[50, 60)",L,Business,1,2
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,5,8
+Male,"[50, 60)",L,Eco,72,72
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,4,1
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,6
+Male,"[50, 60)",L,Eco,0,11
+Male,"[50, 60)",L,Business,23,14
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,153,145
+Male,"[50, 60)",L,Business,13,20
+Male,"[50, 60)",L,Business,9,13
+Female,"[50, 60)",L,Business,29,26
+Male,"[50, 60)",L,Business,5,4
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,1
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,87,85
+Female,"[50, 60)",L,Business,25,24
+Male,"[50, 60)",L,Business,22,8
+Male,"[50, 60)",L,Business,38,24
+Female,"[50, 60)",L,Business,44,60
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,20,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,10,14
+Female,"[50, 60)",NL,Business,0,0
+Female,"[50, 60)",L,Eco,5,0
+Male,"[50, 60)",L,Business,74,51
+Female,"[50, 60)",L,Business,5,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,5
+Female,"[50, 60)",L,Business,5,21
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,13,4
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,10
+Male,"[50, 60)",L,Business,4,8
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,86,87
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,98,113
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,16,11
+Female,"[50, 60)",L,Eco,7,0
+Female,"[50, 60)",L,Business,68,61
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,24,15
+Male,"[50, 60)",L,Business,0,1
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,9
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,73,79
+Female,"[50, 60)",L,Business,82,78
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,9
+Male,"[50, 60)",L,Business,0,24
+Male,"[50, 60)",L,Business,0,5
+Female,"[50, 60)",L,Business,3,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,1
+Female,"[50, 60)",L,Eco,5,0
+Male,"[50, 60)",L,Business,66,52
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,39,40
+Female,"[50, 60)",L,Eco,2,0
+Female,"[50, 60)",L,Business,72,76
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,8,8
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,26,58
+Female,"[50, 60)",L,Business,21,9
+Female,"[50, 60)",L,Business,3,5
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,48,49
+Female,"[50, 60)",L,Business,10,1
+Male,"[50, 60)",L,Business,0,1
+Female,"[50, 60)",L,Eco,20,22
+Female,"[50, 60)",L,Business,0,2
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,16,7
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,1,0
+Female,"[50, 60)",L,Business,1,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,10,4
+Female,"[50, 60)",L,Business,0,25
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,1
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,30,26
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,12,16
+Male,"[50, 60)",L,Business,4,2
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,7
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,2
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,19,7
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,2
+Female,"[50, 60)",L,Eco,12,20
+Female,"[50, 60)",L,Business,1,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,4,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,39,42
+Male,"[50, 60)",L,Business,19,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,19,24
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,4
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,14,0
+Female,"[50, 60)",L,Business,57,56
+Male,"[50, 60)",L,Business,0,12
+Male,"[50, 60)",L,Business,3,8
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,2,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,52,50
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,33,30
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,132,143
+Male,"[50, 60)",L,Business,6,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,57,48
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,23,26
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,48,41
+Male,"[50, 60)",L,Business,21,19
+Female,"[50, 60)",L,Business,0,2
+Female,"[50, 60)",L,Business,47,42
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,9
+Female,"[50, 60)",L,Business,5,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,10,11
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,329,395
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,5
+Male,"[50, 60)",L,Business,7,8
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,6
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,55,47
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,2
+Female,"[50, 60)",L,Business,2,19
+Female,"[50, 60)",L,Eco,179,168
+Female,"[50, 60)",L,Business,59,60
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,13,21
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,2,0
+Female,"[50, 60)",L,Business,0,2
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,11,0
+Female,"[50, 60)",L,Business,2,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,1
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,19
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,4
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,36,53
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,9,0
+Male,"[50, 60)",L,Business,0,2
+Female,"[50, 60)",L,Business,39,31
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,18,0
+Male,"[50, 60)",L,Business,29,13
+Female,"[50, 60)",L,Business,1,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,6,0
+Female,"[50, 60)",L,Business,2,0
+Female,"[50, 60)",L,Business,0,33
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Eco,29,24
+Male,"[50, 60)",L,Business,16,6
+Female,"[50, 60)",L,Business,21,33
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,2,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,35,23
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,4
+Male,"[50, 60)",L,Business,0,1
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,10,6
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,35,36
+Female,"[50, 60)",L,Business,0,12
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,3,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,8,9
+Male,"[50, 60)",L,Eco,95,158
+Female,"[50, 60)",L,Business,0,14
+Male,"[50, 60)",L,Business,15,25
+Male,"[50, 60)",L,Eco,6,9
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,12,35
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,71
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,15,8
+Female,"[50, 60)",L,Business,277,275
+Male,"[50, 60)",L,Business,6,4
+Male,"[50, 60)",L,Business,0,6
+Male,"[50, 60)",L,Business,66,57
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,2,0
+Female,"[50, 60)",L,Business,2,1
+Female,"[50, 60)",L,Business,81,71
+Female,"[50, 60)",L,Business,1,9
+Female,"[50, 60)",L,Business,3,0
+Male,"[50, 60)",L,Business,43,19
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,8
+Male,"[50, 60)",L,Business,104,91
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,29,34
+Female,"[50, 60)",L,Business,2,0
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,12,0
+Male,"[50, 60)",L,Business,0,10
+Female,"[50, 60)",L,Business,0,2
+Female,"[50, 60)",L,Business,3,0
+Female,"[50, 60)",L,Business,8,0
+Female,"[50, 60)",L,Business,45,17
+Male,"[50, 60)",NL,Eco,0,0
+Female,"[50, 60)",L,Business,19,14
+Female,"[50, 60)",L,Business,48,49
+Male,"[50, 60)",L,Business,3,4
+Male,"[50, 60)",L,Business,27,11
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,60,54
+Female,"[50, 60)",L,Business,8,38
+Female,"[50, 60)",L,Business,65,48
+Female,"[50, 60)",L,Business,0,10
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,3,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,6,0
+Male,"[50, 60)",L,Business,14,2
+Male,"[50, 60)",L,Business,30,79
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,4,2
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,55,54
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,35
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,123,164
+Female,"[50, 60)",L,Business,0,3
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,21
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,29,22
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,9
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,13
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,37,30
+Female,"[50, 60)",L,Eco,11,14
+Male,"[50, 60)",L,Business,1,8
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,44,43
+Female,"[50, 60)",L,Business,54,35
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,2,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,19,13
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,5,8
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,105,102
+Female,"[50, 60)",L,Business,0,4
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,1,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,2
+Female,"[50, 60)",L,Business,25,29
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,4
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,26,7
+Male,"[50, 60)",L,Business,0,4
+Female,"[50, 60)",L,Business,3,0
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,73,65
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,108,80
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,5
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,4,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,47,38
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,18
+Male,"[50, 60)",L,Business,0,5
+Male,"[50, 60)",L,Eco,3,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,12,0
+Male,"[50, 60)",L,Eco,72,74
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,5
+Male,"[50, 60)",L,Business,64,57
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,62,43
+Female,"[50, 60)",NL,Eco,91,81
+Female,"[50, 60)",L,Eco,0,11
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,186,180
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,1
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,72,52
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,44,26
+Male,"[50, 60)",L,Business,0,5
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,1
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,5,0
+Female,"[50, 60)",L,Business,31,38
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,10
+Female,"[50, 60)",L,Business,46,64
+Female,"[50, 60)",L,Eco,52,46
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,17
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,14,4
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,16,10
+Female,"[50, 60)",L,Business,63,93
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,24,2
+Male,"[50, 60)",L,Business,5,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,10,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,8
+Female,"[50, 60)",L,Business,0,2
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,65,71
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,13,11
+Male,"[50, 60)",L,Business,168,156
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,63,61
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,25,25
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,62,46
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,5,4
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,3
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,16,19
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,5,5
+Female,"[50, 60)",L,Business,6,0
+Female,"[50, 60)",L,Business,5,0
+Male,"[50, 60)",L,Business,17,0
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,18,0
+Female,"[50, 60)",L,Business,55,55
+Male,"[50, 60)",L,Eco,17,11
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,16,4
+Male,"[50, 60)",L,Business,7,1
+Female,"[50, 60)",L,Business,14,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,15,10
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,11,16
+Female,"[50, 60)",L,Business,0,5
+Female,"[50, 60)",L,Business,26,22
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,4
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,3,0
+Male,"[50, 60)",L,Business,1,19
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,7,15
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,1,0
+Female,"[50, 60)",L,Business,28,19
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,1,38
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,2,0
+Male,"[50, 60)",L,Business,28,11
+Male,"[50, 60)",L,Business,0,12
+Male,"[50, 60)",L,Business,8,10
+Male,"[50, 60)",L,Business,1,3
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,24
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,126,116
+Female,"[50, 60)",L,Eco,20,25
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,4,0
+Female,"[50, 60)",L,Business,10,0
+Female,"[50, 60)",L,Eco,2,1
+Male,"[50, 60)",L,Business,125,124
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,36,36
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,16,20
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,1
+Male,"[50, 60)",L,Business,69,78
+Male,"[50, 60)",L,Business,76,79
+Female,"[50, 60)",L,Business,10,5
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,1,6
+Male,"[50, 60)",NL,Eco,0,5
+Female,"[50, 60)",NL,Eco,4,1
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,7,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,35,34
+Female,"[50, 60)",L,Business,0,5
+Female,"[50, 60)",L,Business,51,29
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,28,27
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,7
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,64,63
+Male,"[50, 60)",L,Business,3,4
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,63,58
+Male,"[50, 60)",L,Business,4,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,4,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,63,51
+Female,"[50, 60)",NL,Business,34,38
+Female,"[50, 60)",NL,Business,20,2
+Female,"[50, 60)",L,Business,27,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,2,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,24
+Male,"[50, 60)",L,Business,55,49
+Female,"[50, 60)",L,Business,11,1
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,14
+Male,"[50, 60)",L,Business,0,6
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,1,8
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,5,4
+Male,"[50, 60)",L,Business,4,7
+Male,"[50, 60)",L,Eco,6,5
+Female,"[50, 60)",L,Business,9,1
+Male,"[50, 60)",L,Business,205,191
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,4,0
+Female,"[50, 60)",L,Business,43,37
+Male,"[50, 60)",L,Business,6,24
+Male,"[50, 60)",L,Business,6,0
+Male,"[50, 60)",L,Eco,0,20
+Male,"[50, 60)",L,Business,1,3
+Male,"[50, 60)",L,Business,159,149
+Male,"[50, 60)",L,Eco,5,0
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,21,42
+Male,"[50, 60)",L,Business,1,1
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,11
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,6,0
+Male,"[50, 60)",L,Business,82,72
+Male,"[50, 60)",L,Business,8,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,147,139
+Male,"[50, 60)",L,Business,77,83
+Female,"[50, 60)",L,Business,4,39
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,4,0
+Female,"[50, 60)",L,Business,114,78
+Female,"[50, 60)",L,Business,3,0
+Female,"[50, 60)",L,Business,16,30
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,15,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,4,0
+Female,"[50, 60)",L,Business,0,21
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,19,33
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,32,23
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,16
+Male,"[50, 60)",L,Business,173,153
+Female,"[50, 60)",L,Business,0,8
+Male,"[50, 60)",L,Business,8,1
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,3,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,9,0
+Female,"[50, 60)",L,Business,63,50
+Male,"[50, 60)",L,Business,4,2
+Male,"[50, 60)",L,Business,5,1
+Male,"[50, 60)",L,Business,0,7
+Female,"[50, 60)",L,Business,80,69
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,1,0
+Male,"[50, 60)",L,Business,17,10
+Female,"[50, 60)",L,Business,158,243
+Male,"[50, 60)",L,Business,12,14
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,1,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,4
+Female,"[50, 60)",L,Business,29,25
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,5,16
+Female,"[50, 60)",L,Business,44,55
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",NL,Eco,151,136
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,47
+Male,"[50, 60)",L,Business,0,1
+Male,"[50, 60)",L,Business,4,2
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,9,9
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,3,0
+Male,"[50, 60)",L,Eco,61,47
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,1,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,3,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,3,10
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,2
+Male,"[50, 60)",L,Business,15,14
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,7,8
+Female,"[50, 60)",L,Eco,0,0
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,15,6
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,1
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,25,9
+Female,"[50, 60)",L,Business,0,1
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Eco,0,0
+Male,"[50, 60)",L,Business,0,6
+Female,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Male,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,0,0
+Female,"[50, 60)",L,Business,75,82
+Female,"[50, 60)",L,Business,0,1
