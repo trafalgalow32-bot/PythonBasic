@@ -7,7 +7,8 @@
 """
 import pandas as pd
 print("연습문제1.")
-
+exam1 = pd.read_csv('data/연습문제/Cars93.csv')
+print(exam1)
 
 print("\n 연습문제2.")
 """

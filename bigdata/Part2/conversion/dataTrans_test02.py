@@ -4,6 +4,7 @@ import sklearn
 import pandas as pd
 import numpy as np
 """
+Part2. 데이터 핸들링
 3장 데이터 변환
 2절 데이터 인코딩
  사이킷런의 머신러닝 알고리즘은 입력 데이터에 문자열 값을 허용하지 않아 문자열을 숫자형으로 변환하는 과정이 필요하다. 

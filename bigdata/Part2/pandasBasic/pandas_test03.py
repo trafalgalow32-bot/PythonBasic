@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 
 """
+Part2. 데이터 핸들링
 2장 Pandas를 활용한 데이터 다루기
 2절. 데이터 입출력
 1. 데이터 불러오기 : pandas.read_csv(filepath, sep = ',', ...)

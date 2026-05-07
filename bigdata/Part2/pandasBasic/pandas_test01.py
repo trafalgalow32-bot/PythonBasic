@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 
 """
+Part2. 데이터 핸들링
 2장 Pandas를 활용한 데이터 다루기
 1절. Series와 DataFrame
 1. Series(시리즈)
