@@ -12,50 +12,43 @@ exam1 = pd.read_csv('data/연습문제/Cars93.csv')
 
 print("연습 문제1.")
 # Wheelbase
-Wheelbase = exam1['Wheelbase']
+wb = exam1['Wheelbase']
 
 # Wheelbase 평균
-Wheelbase_avg = Wheelbase.mean()
+wb_mean = wb.mean()
 
 # Wheelbase 표준편차
-Wheelbase_std = Wheelbase.std()
+wb_std = wb.std()
 
 # Case1. 평균 값에서 표준편차를 1.5배를 더하거나 빼는 경우, 구간의 하한(Low_1)과 상한(Upp_1) 계산
-Low_1 = Wheelbase_avg - 1.5 * Wheelbase_std
-Upp_1 = Wheelbase_avg + 1.5 * Wheelbase_std
+Lower1 = wb_mean - 1.5 * wb_std
+Upper1 = wb_mean + 1.5 * wb_std
 
-# 구간 내 데이터들의 평균
-Avg_1 = Wheelbase[(Wheelbase > Low_1) & (Wheelbase < Upp_1)].mean()
+# 원 데이터 평균 - 구간 내 데이터들의 평균
+case1 = wb_mean - wb[(wb > Lower1) & (wb < Upper1)].mean()
 
-# 원래의 데이터 평균에서 뺌
-Case1 = Wheelbase_avg - Avg_1
 
 # Case2. 평균 값에서 표준편차를 2배를 더하거나 빼는 경우
 # 구간의 하한(Low_2)과 상한(Upp_2) 계산
-Low_2 = Wheelbase_avg - 2 * Wheelbase_std
-Upp_2 = Wheelbase_avg + 2 * Wheelbase_std
+Lower2 = wb_mean - 2 * wb_std
+Upper2 = wb_mean + 2 * wb_std
 
-# 구간 내 데이터들의 평균
-Avg_2 = Wheelbase[(Wheelbase > Low_2) & (Wheelbase < Upp_2)].mean()
-
-# 원래의 데이터 평균에서 뺌
-Case2 = Wheelbase_avg - Avg_2
+# 원 데이터 평균 - 구간 내 데이터들의 평균
+case2 = wb_mean - wb[(wb > Lower2) & (wb < Upper2)].mean()
 
 # Case3. 평균 값에서 표준편차를 2.5배를 더하거나 빼는 경우
 # 구간의 하한(Low_3)과 상한(Upp_2) 계산
-Low_3 = Wheelbase_avg - 2.5 * Wheelbase_std
-Upp_3 = Wheelbase_avg + 2.5 * Wheelbase_std
+Lower3 = wb_mean - 2.5 * wb_std
+Upper3 = wb_mean + 2.5 * wb_std
 
-# 구간 내 데이터들의 평균
-Avg_3 = Wheelbase[(Wheelbase > Low_3) * (Wheelbase < Upp_3)].mean()
+# 원 데이터 평균 - 구간 내 데이터들의 평균
+case3 = wb_mean - wb[(wb > Lower3) * (wb < Upper3)].mean()
 
-# 원래의 데이터 평균에서 뺌
-Case3 = Wheelbase_avg - Avg_3
 
 # 결과를 result에 할당
-result1 = round(Case1 + Case2 + Case3, 4)
+result1 = round(case1 + case2 + case3, 4)
 
-# 결과 출력
+# 결과 출력 : 정답 0.4845
 print(result1)
 
 print("연습 문제2.")
@@ -78,7 +71,7 @@ sub_std = sub.std()
 # 결과를 result에 할당
 result2 = round(sub_std, 3)
 
-# 결과 출력
+# 결과 출력 : 정답 8.884
 print(result2)
 
 """
@@ -90,15 +83,17 @@ print("\n 연습문제 3.")
 exam3 = pd.read_csv('data/연습문제/Cars93.csv')
 
 # 내림차순으로 정렬해 MaxPrice_sort에 할당
-MaxPrice_sort = exam3['Max_Price'].sort_values(ascending = False, ignore_index = True)
+maxp = exam3['Max_Price'].sort_values(ascending = False, ignore_index = True)
 
 # 오름차순으로 정렬해 MinPrice_sort에 할당
-MinPrice_sort = exam3['Min_Price'].sort_values(ascending = True, ignore_index = True)
+minp = exam3['Min_Price'].sort_values(ascending = True, ignore_index = True)
 
 # 차이 계산
 # 메소드 .sort_values()에 ignore_index = True을 하지 않을 경우
 # 정렬과 무관하게 정렬 전의 인덱스가 같은 값들끼리 차이를 계산하게 됨
-diff = MaxPrice_sort - MinPrice_sort
+# Pandas는 무조건 인덱스가 같은 것끼리 짝을 지어 연산하는 특징이 있음.
+# 따라서 기껏 데이터를 정렬/분류 했는데, 바뀌지 않은 인덱스로 인한 계산 오류를 방지하는 것! 
+diff = maxp - minp
 
 # 차이에 대한 표준 편차
 diff_std = diff.std()
@@ -106,7 +101,7 @@ diff_std = diff.std()
 # 결과를 result에 할당
 result3 = round(diff_std, 3)
 
-# 결과를 출력
+# 결과를 출력 : 18.584
 print(result3)
 
 """

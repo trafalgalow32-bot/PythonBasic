@@ -5,42 +5,21 @@
 평균을 각각 구한 후 원래의 데이터 평균에서 뺏을 때 차이들의 합을 출력하여라.
 (단, 소수점 다섯째 자리에서 반올림하여 표현할 것)
 """
-print("연습 문제1.")
 import pandas as pd
-exam1 = pd.read_csv('data/연습문제/Cars93.csv')
-wb = exam1['Wheelbase']
-# print(wb)
-wb_mean = wb.mean() # Wheelbase 컬럼의 평균
-wb_std = wb.std() # Wheelbase 컬럼의 표준편차
-wb_a = wb.mean((wb_mean - (wb_std * 1.5)) & (wb_mean + (wb_std * 1.5)))
-wb_b = wb.mean((wb_mean - (wb_std * 2)) & (wb_mean + (wb_std * 2)))
-wb_c = wb.mean((wb_mean - (wb_std * 2.5)) & (wb_mean + (wb_std * 2.5)))
-result1 = (wb_mean - wb_a) + (wb_mean - wb_b) + (wb_mean - wb_c)
-print(round(result1, 5))
+print("연습문제1.")
 
 
-
-
-
-# print(exam1)
-
-
-
+print("\n 연습문제2.")
 """
 2. Cars93 데이터셋의 Length 컬럼에 대해서 순위를 부여한 후, 1위부터 30위까지 값들의 표준편차를 구하고, 소수점 셋째까지 반올림하여
 나타내어라.
 (단, 동점은 동일한 순위를 부여하되 평균내어 등수를 산정하며 최솟값을 1위로 함)
 """
 
+
 """
 3. Cars93 데이터셋의 Max_Price 컬럼과 Min_Price 컬럼에 대해서 각각 정렬한 후 정렬된 순서에 따라 레코드별로 Max_Price와 Min_Price의
 차이를 산출하고 차이값에 대해 표준편차를 구하여라.
 (단, Max_Price의 정렬은 내림차순, Min_Price의 정렬은 오름차순으로 하며, 출력시 표준편차는 소수점 넷째 자리에서 반올림하여 표현할 것.)
 """
-print("\n 연습문제 3.")
-
-"""
-4. Cars93 데이터셋의 Weight 컬럼을 Min-Max 정규화로 변환한 후, 0.5보다 작은 값들의 분산과 0.5보다 큰 값들의 분산의 차이를 구하여라.
-(단, 차이는 큰 값에서 작은 값을 빼서 구하며, 소수점 넷째 자리에서 반올림하여 표현할 것)
-"""
-print("\n 연습문제 4.")
+print("\n 연습문제3")
