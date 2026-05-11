@@ -10,7 +10,7 @@ Part 4. 머신 러닝
 sklearn.neighbors.KNeighborsClassifier(n_neighbors = 5, weights = 'uniform')
 
 Q. 사이킷런 패키지 내 breast_cancer 데이터를 호출한 후 학습 데이터와 평가 데이터로 분할하고 클래스 KNeighborsClassifier()을 통해 
-이진분류 모형체계를 생성하고 학습한 후 평가 데이터로 목푯값을 예측하고 성능을 측정하는 코드를 작성해보자.
+이진분류 모형객체를 생성하고 학습한 후 평가 데이터로 목푯값을 예측하고 성능을 측정하는 코드를 작성해보자.
 (단, 학습과 평가 데이터의 비율은 8대 2로하고, target의 비율을 반영하고 평가지표는 AUC를 사용해 보자.)
 """
 
