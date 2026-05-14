@@ -27,14 +27,23 @@ sklearn.metrics.silhouette_sample(X, y, ...)
  시각화 없이 군집 평가를 수행하는 방법에 대해 알아보고자 한다.(이에 대한 자세한 방법은 다음 절에서 다루고자 한다.)
 
  2. RI와 ARI
-
-
-
-
-
+ - 랜드지수와 조정 랜드지수는 각각 사이킷런의 서브패키지 metrics.cluster 내의 함수 rand_score(), adjusted_rand_score()를 통해 계산할 수 있다.
  
-
-Q. 사이킷런 패키지 내 breast_cancer 데이터를 호출한 후 학습 데이터와 평가 데이터로 분할하고 클래스 LGBMClassifier()를 통해 
-이진분류 모형객체를 생성하고 학습한 후 평가 데이터로 목푯값을 예측하고 성능을 측정하는 코드를 작성해보자.
-(단, 학습과 평가 데이터의 비율은 8대 2로하고, target의 비율을 반영하고 평가지표는 AUC를 사용해 보자.)
+Q. 임의의 리스트 labels_true와 labels_pred를 생성한 후, 함수 rand_score(), adjust_rand_score()를 통하여 RI와 ARI를 계산하는 파이썬 코드를
+작성해보자.
 """
+
+# 임의의 리스트 작성
+labels_true = [0,0,0,1,1,1,1,2,2]
+labels_pred = [0,0,1,1,1,1,2,2,2]
+
+# 함수 호출
+from sklearn.metrics.cluster import rand_score, adjusted_rand_score
+
+# RI(랜드지수)
+ri = rand_score(labels_true, labels_pred)
+print(ri)
+
+# ARI(조정 랜드지수)
+ari = adjusted_rand_score(labels_true, labels_pred)
+print(ari)

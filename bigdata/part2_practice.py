@@ -20,29 +20,30 @@ wb_mean = wb.mean()
 # Wheelbase 표준편차
 wb_std = wb.std()
 
-# Case1. 평균 값에서 표준편차를 1.5배를 더하거나 빼는 경우, 구간의 하한(Low_1)과 상한(Upp_1) 계산
-Lower1 = wb_mean - 1.5 * wb_std
-Upper1 = wb_mean + 1.5 * wb_std
+# Case1. 평균 값에서 표준편차의 1.5배를 더하거나 빼는 경우
+# 구간의 하한(Low_1)과 상한(Upp_1) 계산
+lower1 = wb_mean - 1.5 * wb_std
+upper1 = wb_mean + 1.5 * wb_std
 
 # 원 데이터 평균 - 구간 내 데이터들의 평균
-case1 = wb_mean - wb[(wb > Lower1) & (wb < Upper1)].mean()
+case1 = wb_mean - wb[(wb > lower1) & (wb < upper1)].mean()
 
 
-# Case2. 평균 값에서 표준편차를 2배를 더하거나 빼는 경우
+# Case2. 평균 값에서 표준편차의 2배를 더하거나 빼는 경우
 # 구간의 하한(Low_2)과 상한(Upp_2) 계산
-Lower2 = wb_mean - 2 * wb_std
-Upper2 = wb_mean + 2 * wb_std
+lower2 = wb_mean - 2 * wb_std
+upper2 = wb_mean + 2 * wb_std
 
 # 원 데이터 평균 - 구간 내 데이터들의 평균
-case2 = wb_mean - wb[(wb > Lower2) & (wb < Upper2)].mean()
+case2 = wb_mean - wb[(wb > lower2) & (wb < upper2)].mean()
 
-# Case3. 평균 값에서 표준편차를 2.5배를 더하거나 빼는 경우
+# Case3. 평균 값에서 표준편차의 2.5배를 더하거나 빼는 경우
 # 구간의 하한(Low_3)과 상한(Upp_2) 계산
-Lower3 = wb_mean - 2.5 * wb_std
-Upper3 = wb_mean + 2.5 * wb_std
+lower3 = wb_mean - 2.5 * wb_std
+upper3 = wb_mean + 2.5 * wb_std
 
 # 원 데이터 평균 - 구간 내 데이터들의 평균
-case3 = wb_mean - wb[(wb > Lower3) * (wb < Upper3)].mean()
+case3 = wb_mean - wb[(wb > lower3) * (wb < upper3)].mean()
 
 
 # 결과를 result에 할당
@@ -63,13 +64,13 @@ exam2 = pd.read_csv('data/연습문제/Cars93.csv')
 rank = exam2['Length'].rank(method = 'average')
 
 # 1위 ~ 30위까지만 추출
-sub = exam2['Length'][rank <= 30]
+top30 = exam2['Length'][rank <= 30]
 
 # sub 의 표준편차
-sub_std = sub.std()
+top30_std = top30.std()
 
 # 결과를 result에 할당
-result2 = round(sub_std, 3)
+result2 = round(top30_std, 3)
 
 # 결과 출력 : 정답 8.884
 print(result2)
@@ -82,10 +83,10 @@ print(result2)
 print("\n 연습문제 3.")
 exam3 = pd.read_csv('data/연습문제/Cars93.csv')
 
-# 내림차순으로 정렬해 MaxPrice_sort에 할당
+# 내림차순으로 정렬해 maxp에 할당
 maxp = exam3['Max_Price'].sort_values(ascending = False, ignore_index = True)
 
-# 오름차순으로 정렬해 MinPrice_sort에 할당
+# 오름차순으로 정렬해 minp에 할당
 minp = exam3['Min_Price'].sort_values(ascending = True, ignore_index = True)
 
 # 차이 계산
@@ -111,15 +112,15 @@ print(result3)
 print("\n 연습문제 4.")
 exam4 = pd.read_csv('data/연습문제/Cars93.csv')
 
-# Weight 컬럼 Min_Max 정규화로 변환
-Weight = exam4['Weight']
-Weight_std = (Weight - min(Weight)) / (max(Weight) - min(Weight))
+# Weight 컬럼 Min_Max 정규화로 변환 ( ※ mms: MinMaxScaling의 약어)
+weight = exam4['Weight']
+weight_mms = (weight - min(weight)) / (max(weight) - min(weight))
 
-# 0.5보다 작은 Weight들의 분산
-var_under = Weight_std[Weight_std < 0.5].var()
+# 0.5보다 작은 weight들의 분산
+var_under = weight_mms[weight_mms < 0.5].var()
 
-# 0.5보다 큰 Weight들의 분산
-var_over = Weight_std[Weight_std > 0.5].var()
+# 0.5보다 큰 weight들의 분산
+var_over = weight_mms[weight_mms > 0.5].var()
 
 # 차이 계산
 diff = abs(var_over - var_under)
