@@ -6,11 +6,12 @@
 (단, 소수점 다섯째 자리에서 반올림하여 표현할 것)
 """
 
+# 필요 값 : Wheelbase 컬럼 데이터프레임, 평균(Wheelbase 컬럼), 
+# 표준편차(Wheelbase 컬럼), 조건들(1.5배, 2배, 2.5배 +-)
+
 import pandas as pd
 exam1 = pd.read_csv('data/연습문제/Cars93.csv')
 # print(exam1)
-# 필요 값 : Wheelbase 컬럼 데이터프레임, 평균(Wheelbase 컬럼), 
-# 표준편차(Wheelbase 컬럼), 조건들(1.5배, 2배, 2.5 +-)
 print("연습 문제1.")
 
 # Wheelbase
@@ -45,19 +46,19 @@ lower3 = wb_mean - 2.5 * wb_std
 upper3 = wb_mean + 2.5 * wb_std
 
 # 원 데이터 평균 - 구간 내 데이터들의 평균
-case3 = wb_mean - wb[(wb > lower3) * (wb < upper3)].mean()
+case3 = wb_mean - wb[(wb > lower3) & (wb < upper3)].mean()
 
 
-# 결과를 result에 할당
+# 결과 할당
 result1 = round(case1 + case2 + case3, 4)
 
-# 결과 출력 : 정답 0.4845
-print(result1)
+# 결과 출력
+print(result1) # 정답 0.4845
 
 print("\n 연습 문제2.")
 """
-2. Cars93 데이터셋의 Length 컬럼에 대해서 순위를 부여한 후, 1위부터 30위까지 값들의 표준편차를 구하고, 소수점 셋째까지 반올림하여
-나타내어라.
+2. Cars93 데이터셋의 Length 컬럼에 대해서 순위를 부여한 후, 1위부터 30위까지 
+값들의 표준편차를 구하고, 소수점 셋째까지 반올림하여 나타내어라.
 (단, 동점은 동일한 순위를 부여하되 평균내어 등수를 산정하며 최솟값을 1위로 함)
 """
 # 필요 데이터 : 데이터프레임(Length 컬럼), Length 순위, 
@@ -73,21 +74,22 @@ top30 = exam2['Length'][rank <= 30]
 # sub 의 표준편차
 top30_std = top30.std()
 
-# 결과를 result에 할당
+# 결과 할당
 result2 = round(top30_std, 3)
 
 # 결과 출력 : 정답 8.884
 print(result2)
 
 """
-3. Cars93 데이터셋의 Max_Price 컬럼과 Min_Price 컬럼에 대해서 각각 정렬한 후 정렬된 순서에 따라 레코드별로 Max_Price와 Min_Price의
-차이를 산출하고 차이값에 대해 표준편차를 구하여라.
-(단, Max_Price의 정렬은 내림차순, Min_Price의 정렬은 오름차순으로 하며, 출력시 표준편차는 소수점 넷째 자리에서 반올림하여 표현할 것.)
+3. Cars93 데이터셋의 Max_Price 컬럼과 Min_Price 컬럼에 대해서 각각 정렬한 후
+정렬된 순서에 따라 레코드별로 Max_Price와 Min_Price의 차이를 산출하고 
+차이값에 대해 표준편차를 구하여라.
+(단, Max_Price의 정렬은 내림차순, Min_Price의 정렬은 오름차순으로 하며, 
+출력시 표준편차는 소수점 넷째 자리에서 반올림하여 표현할 것.)
 """
 print("\n 연습문제 3.")
 exam3 = pd.read_csv('data/연습문제/Cars93.csv')
-# 필요 데이터 : Max_Price 컬럼, Min_Price 컬럼, 차이(Max - Min)
-# , 차이값에 대한 표준 편차
+
 
 # 내림차순으로 정렬해 maxp에 할당
 maxp = exam3['Max_Price'].sort_values(ascending = False, ignore_index = True)
@@ -124,23 +126,24 @@ exam4 = pd.read_csv('data/연습문제/Cars93.csv')
 weight = exam4['Weight']
 weight_mms = (weight - min(weight)) / (max(weight) - min(weight))
 
-# 0.5보다 작은 weight들의 분산
+# Min_max 정규화 값이 0.5보다 작은 weight들의 분산
 var_under = weight_mms[weight_mms < 0.5].var()
 
-# 0.5보다 큰 weight들의 분산
+# Min_max 정규화 값이 0.5보다 큰 weight들의 분산
 var_over = weight_mms[weight_mms > 0.5].var()
 
 # 차이 계산
 diff = abs(var_over - var_under)
 
-# 결과를 result에 할당
+# 결과 할당
 result4 = round(diff, 3)
 
-# 결과를 출력
+# 결과 출력
 print(result4) # 정답 : 0.001
 
 """
-5. Cars93 데이터셋을 이용하여 Manufacturer, Origin 컬럼의 유일값 조합의 수와 Manufacturer 컬럼의 앞 두글자만 추출한 결과와 Origin 컬럼과의
+5. Cars93 데이터셋을 이용하여 Manufacturer, Origin 컬럼의 유일값 조합의 수와 
+Manufacturer 컬럼의 앞 두글자만 추출한 결과와 Origin 컬럼과의
 유일값 조합 수의 차이를 구하여라.
 (단, 원래 유일값 조합 수에서 추출 이후 수를 뺄 것)
 """
@@ -163,15 +166,16 @@ exam5['sub_str'] = exam5['Manufacturer'].str[:2]
 uniq_new = exam5[['sub_str', 'Origin']].drop_duplicates()
 num_uniq_new = uniq_new.shape[0]
 
-# 결과를 result에 할당
+# 결과 할당
 result5 = num_uniq_raw - num_uniq_new
 
-# 출력
-print(result5)
+# 결과 출력
+print(result5) # 정답 4
 
 """
-6.Cars93 데이터셋을 이용하여 컬럼 Type, Man_trans_avail에 대한 그룹별 RPM 레코드 수와 RPM 합계, 중앙값을 모두 구한 후, 그룹별 중앙값에서 
-그룹별 합계에서 레코드 수를 나눈 값들을 빼서 나온 결과의 총 원소 합을 구하여라. 
+6.Cars93 데이터셋을 이용하여 컬럼 Type, Man_trans_avail에 대한 그룹별 RPM 레코드 
+수와 RPM 합계, 중앙값을 모두 구한 후, 그룹별 중앙값에서 그룹별 합계에서 
+레코드 수를 나눈 값들을 빼서 나온 결과의 총 원소 합을 구하여라. 
 (단, 출력시 소수점은 첫째 자리에서 반올림하여 표현할 것)
 """
 print("\n 연습문제 6.")
@@ -194,11 +198,12 @@ calcul = sum(rpmmid - rpmsum / rpmcnt)
 result6 = round(calcul, 0)
 
 # 출력
-print(result6)
+print(result6) # 정답 442.0
 
 """
-7. Cars93 데이터셋을 이용하여 RPM 컬럼의 결측치를 평균으로 대체하고 RPM과 Wheelbase 컬럼을 각각 z-점수 표준화한 후 표준화된 Wheelbase에 상수 -36
-을 곱한 값과 표준화된 RPM 컬럼의 차이값을 구하고 표준편차를 산출하여라. 
+7. Cars93 데이터셋을 이용하여 RPM 컬럼의 결측치를 평균으로 대체하고 RPM과 Wheelbase 컬럼을 
+각각 z-점수 표준화한 후 표준화된 Wheelbase에 상수 -36을 곱한 값과 표준화된 RPM 컬럼의 차이값을 
+구하고 표준편차를 산출하여라. 
 (단, 소수점 셋째 자리까지 반올림하여 표현할 것)
 """
 print("\n 연습문제 7.")
@@ -225,11 +230,12 @@ diff_std = diff.std()
 result7 = round(diff_std, 3)
 
 # 출력
-print(result7)
+print(result7) # 정답 35.561
 
 """
-8. Cars93 데이터셋을 이용하여 먼저, Price 컬럼의 결측치를 평균으로 대체하고 Max_Price 변수와 Min_Price의 평균보다 작은 레코드만을 추출해 산출된
-Origin 그룹별 Price의 합계를 구하고 다음으로 Price 컬럼의 결측치를 중앙값으로 대체하고 Price 컬럼이 Min_Price 컬럼의 제 3사분위수보다 
+8. Cars93 데이터셋을 이용하여 먼저, Price 컬럼의 결측치를 평균으로 대체하고 Max_Price 변수와 
+Min_Price의 평균보다 작은 레코드만을 추출해 산출된 Origin 그룹별 Price의 합계를 구하고 다음으로 
+Price 컬럼의 결측치를 중앙값으로 대체하고 Price 컬럼이 Min_Price 컬럼의 제 3사분위수보다 
 작은 레코드만을 추출해 산출된 Origin별 Price의 합계를 Origin 그룹별로 합한 후 큰 값을 출력하여라. 
 (단, 소수점 이하는 모두 절삭하여 정수로 표현할 것)
 """
@@ -273,15 +279,17 @@ sum2 = subdf2.groupby('Origin')['Price'].sum()
 maxval = max(sum1 + sum2)
 
 # 결과
-import numpy as np
-result8 = int(np.floor(maxval)) # int(maxval)만 해도 됨!
+# import numpy as np # numpy 안 쓰는 방향으로!
+# result8 = int(np.floor(maxval)) # int(maxval)만 해도 됨!
+result8 = int(maxval)
 
 # 출력
-print(result8)
+print(result8) # 정답 856
 
 """
-9. Cars93 데이터셋에서 'Price' 컬럼은 'Min_Price'와 'Max_Price'의 평균으로 알려져 있다. 이와 같은 사실을 통해 'Price' 컬럼의 결측치의 원래의 값을
-계산한 후, 'Price'가 14.7보다 작거나 25.3보다 크면서 'Large' 타입인 레코드 수를 계산하여라. 
+9. Cars93 데이터셋에서 'Price' 컬럼은 'Min_Price'와 'Max_Price'의 평균으로 알려져 있다. 
+이와 같은 사실을 통해 'Price' 컬럼의 결측치의 원래의 값을 계산한 후, 
+'Price'가 14.7보다 작거나 25.3보다 크면서 'Large' 타입인 레코드 수를 계산하여라. 
 """
 print("\n 연습문제 9.")
 import pandas as pd
@@ -311,14 +319,15 @@ cond2 = (price > 25.3) & (type =='Large')
 cond = cond1 | cond2
 
 # 결과 할당
-result9 = exam9[cond].shape[0]
+# .shape(행&레코드개수;0, 열&변수의 개수;1) 그래서! 
+result9 = exam9[cond].shape[0] 
 
 # 출력
 print(result9) # 정답 35
 
 """
-10. Cars93 데이터셋에서 'Make' 컬럼을 이용하여 제조사가 'Chevrolet', 'Pontiac', 'Hyundai'이면서 'AirBags'이 'Driver'에만 있는 경우의 
-레코드 수를 계산하여라.
+10. Cars93 데이터셋에서 'Make' 컬럼을 이용하여 제조사가 'Chevrolet', 'Pontiac', 'Hyundai'이면서 
+'AirBags'이 'Driver'에만 있는 경우의 레코드 수를 계산하여라.
 """
 print("\n 연습문제 10.")
 import pandas as pd
@@ -327,16 +336,22 @@ exam10 = pd.read_csv('data/연습문제/Cars93.csv')
 # 컬럼들 시리즈로 별도 저장
 make = exam10['Make'].copy()
 airbag = exam10['AirBags'].copy()
+"""
+공백을 애초에 원천 봉쇄! 이것도 고려해보셈!
+make = exam10['Make'].str.strip()
+airbag = exam10['AirBags'].str.strip()
+"""
+
 
 # 제조사가 'Chevrolet', 'Pontiac', 'Hyundai'인 경우
 # (위치 인덱스 기준) 12, 16, 72, 74번 문자열 앞에 공백이 포함되어 있음
 # 확인 코드
-# print(make[make.str[0] == ''])
+# print(make[make.str[0] == ' '])
 
 make = make.str.strip()
 
 ### 조건
-# 튜플로 입력 시 여러 문자열로 시작하는 경우에 대한 Bool 결가를 찾을 수 있음
+# 튜플로 입력 시 여러 문자열로 시작하는 경우에 대한 Bool 결rhk를 찾을 수 있음
 # 문자열이 'Chevrolet' 또는 'Pontiac' 또는 'Hyundai'로 시작하면 True를 반환함
 cond1 = make.str.startswith(('Chevrolet', 'Pontiac', 'Hyundai'))
 
@@ -349,3 +364,98 @@ result10 = sum(cond1 & cond2)
 # 출력
 print(result10) # 정답 3
 
+"""
+11. Rabbit  데이터셋을 불러와 Dose 컬럼의 제 3사분위수와 제 2사분위수를 구하고 두 값의 차이의 
+절댓값을 구한 후 소수점을 버린 값을 출력하여라.
+"""
+print("\n 연습문제 11.")
+import pandas as pd
+exam11 = pd.read_csv('data/연습문제/Rabbit.csv')
+
+# 제 3 사분위수, 제 2사분위수 별도 저장
+rabbitq3 = exam11['Dose'].quantile(.75)
+rabbitq2 = exam11['Dose'].median() # quantile(.5)도 됨!
+
+# 두 값 차이의 절댓값
+rabbitdiff = abs(rabbitq3 - rabbitq2)
+
+# 결과
+result11 = rabbitdiff.astype('int64') # int(rabbitdiff) 도 됨!
+
+# 출력
+print(result11) # 정답: 62
+
+"""
+12. Boston 데이터셋을 불러와 medv 컬럼에 대해서 동일한 폭으로 binning한 후 가장 많은 빈도를 가지는 
+구간을 산출하고 해당 구간 내 dis 컬럼의 중앙값을 구하여라.
+(폭은 10을 기준으로 하고 소수점은 둘째 자리까지 나타내시오.)
+"""
+print("\n 연습문제 12.")
+import pandas as pd
+exam12 = pd.read_csv('data/연습문제/Boston.csv')
+
+### 왜 0~50 범위로 폭을 10으로 binning을 하는지 알아보기 위해!
+# print(exam12['medv'].max())
+# print(exam12['medv'].min())
+
+# medv 컬럼에 대해서 동일한 폭으로 binning
+medv_cut = pd.cut(exam12['medv'], bins = [0, 10, 20, 30, 40, 50])
+# medv_cut = pd.cut(exam12['medv'], bins = 5) 이것도 됨! 이게 더 효율적일지도...
+
+# 가장 많은 빈도를 가지는 구간 산출
+mode = medv_cut.value_counts().idxmax()
+
+# 해당 구간 내 dis 컬럼의 중앙값
+# 조건
+cond = (medv_cut == mode)
+
+#중앙값
+median = exam12['dis'][cond].median()
+
+# 결과
+result12 = round(median, 2)
+
+# 출력
+print(result12) # 정답 3.95
+
+"""
+13. Melanoma 데이터셋을 불러와 1번째~122번째 레코드와 123번째 이후 레코드로 데이터셋을 분리하고 
+각 데이터셋별로 thickness 컬럼을 z-score 정규화로 변환한 후 -1과 1 사이 값들의 중앙값을 각각 산출한
+후 합계를 구하여라. 
+(단, z-score 정규화 변환 계산에 사용되는 평균과 표준편차는 분리된 것과 관계없이 1번째~123번째 레코드로 
+이루어진 데이터셋을 기준으로 하고 출력 시 소수점 넷째 자리까지 반올림하여 나타낼 것, 레코드 번호는 
+가장 위에 위치한 레코드를 1번으로 가정함)
+"""
+print("\n 연습문제 13.")
+import pandas as pd
+exam13 = pd.read_csv('data/연습문제/Melanoma.csv')
+
+# 1번째~123번째 레코드와 123번째 이후 레코드로 데이터셋을 분리
+df1 = exam13.iloc[:123]
+df2 = exam13.iloc[123:]
+
+# thickness 컬럼을 z-score 정규화로 변환
+# 1번째~123번째 레코드로 이루어진 데이터셋의 thickness 평균
+avg = df1['thickness'].mean()
+
+# 1번째~123번째 레코드로 이루어진 데이터셋의 thickness 표준편차
+std = df1['thickness'].std()
+
+# z-score 변환 (※ z-score 정규화 공식 암기할 것!)
+zstd1 = (df1['thickness'] - avg)/std
+zstd2 = (df2['thickness'] - avg)/std
+
+# -1과 1 사이 값들의 중앙값을 각각 산출
+# -1과 1사이 값
+sub_zstd1 = zstd1[(zstd1 >= -1) & (zstd1 <= 1)]
+sub_zstd2 = zstd2[(zstd2 >= -1) & (zstd2 <= 1)]
+
+# 중앙값
+med1 = sub_zstd1.median()
+med2 = sub_zstd2.median()
+
+# 결과 
+result13 = round(med1 + med2, 4)
+
+# 출력
+print(result13) # 정답 -1.0027
