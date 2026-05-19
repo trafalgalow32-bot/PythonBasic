@@ -123,14 +123,15 @@ print("\n 연습문제 4.")
 exam4 = pd.read_csv('data/연습문제/Cars93.csv')
 
 # Weight 컬럼 Min_Max 정규화로 변환 ( ※ mms: MinMaxScaling의 약어)
-weight = exam4['Weight']
-weight_mms = (weight - min(weight)) / (max(weight) - min(weight))
+# MinMax 정규화 공식: (변량 - 최소값) / (최대값 - 최소값)
+wt = exam4['Weight']
+wt_mms = (wt - min(wt)) / (max(wt) - min(wt))
 
 # Min_max 정규화 값이 0.5보다 작은 weight들의 분산
-var_under = weight_mms[weight_mms < 0.5].var()
+var_under = wt_mms[wt_mms < 0.5].var()
 
 # Min_max 정규화 값이 0.5보다 큰 weight들의 분산
-var_over = weight_mms[weight_mms > 0.5].var()
+var_over = wt_mms[wt_mms > 0.5].var()
 
 # 차이 계산
 diff = abs(var_over - var_under)
@@ -156,7 +157,7 @@ exam5 = pd.read_csv('data/연습문제/Cars93.csv')
 # .nunique() : 데이터프레임의 각 컬럼별 유일값 수를 계산하는 메소드
 # .drop_duplicates(): 데이터프레임의 여러 컬럼들의 조합에 대한 유일값을 추출하는 메소드
 uniq_raw = exam5[['Manufacturer', 'Origin']].drop_duplicates()
-num_uniq_raw = uniq_raw.shape[0]
+num_uniq_raw = uniq_raw.shape[0] # 32개의 조합 도출
 
 # Manufacturer 컬럼 앞 두 글자만 추출한 결과와 Origin과 유일값 조합의 수
 # Manufacturer 컬럼 앞 두 글자 추출
@@ -164,7 +165,7 @@ exam5['sub_str'] = exam5['Manufacturer'].str[:2]
 
 # 유일값 조합의 수
 uniq_new = exam5[['sub_str', 'Origin']].drop_duplicates()
-num_uniq_new = uniq_new.shape[0]
+num_uniq_new = uniq_new.shape[0] # 28개의 조합 도출
 
 # 결과 할당
 result5 = num_uniq_raw - num_uniq_new
