@@ -86,3 +86,29 @@ print(a) # (a) 출력값 2.43
 print(b) # (b) 검정통계량, 출력값 2.43
 print(c) # (c) p-값 , 출력값 0.043
 print('기각') # 유의수준 0.05 이내!
+
+print("\n 연습 문제4.")
+import pandas as pd
+exam4 = pd.read_csv('data/연습문제/Cars93.csv', encoding = 'cp949')
+
+from scipy.stats import shapiro
+price = exam4['Price'].copy().dropna()
+
+# (a) 표본평균
+avg = price.mean()
+avg = round(avg, 2)
+print(avg)
+
+#(b)-(c)
+# 샤피로 윌크 검정 수행
+stat, pval = shapiro(price)
+
+# (b) 검정 통계량
+stat = round(stat, 2)
+print(stat)
+
+# (c) p-값 기각 여부
+pval = round(pval, 4)
+pval = int(pval)
+print(pval)
+print('기각')
