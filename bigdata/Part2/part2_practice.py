@@ -156,19 +156,19 @@ exam5 = pd.read_csv('data/연습문제/Cars93.csv')
 # .unique() : 시리즈의 유일값을 추출하는 메소드
 # .nunique() : 데이터프레임의 각 컬럼별 유일값 수를 계산하는 메소드
 # .drop_duplicates(): 데이터프레임의 여러 컬럼들의 조합에 대한 유일값을 추출하는 메소드
-uniq_raw = exam5[['Manufacturer', 'Origin']].drop_duplicates()
-num_uniq_raw = uniq_raw.shape[0] # 32개의 조합 도출
+comb1 = exam5[['Manufacturer', 'Origin']].drop_duplicates()
+cntcomb1 = comb1.shape[0] # 32개의 조합 도출
 
 # Manufacturer 컬럼 앞 두 글자만 추출한 결과와 Origin과 유일값 조합의 수
 # Manufacturer 컬럼 앞 두 글자 추출
 exam5['sub_str'] = exam5['Manufacturer'].str[:2]
 
 # 유일값 조합의 수
-uniq_new = exam5[['sub_str', 'Origin']].drop_duplicates()
-num_uniq_new = uniq_new.shape[0] # 28개의 조합 도출
+comb2 = exam5[['sub_str', 'Origin']].drop_duplicates()
+cntcomb2 = comb2.shape[0] # 28개의 조합 도출
 
 # 결과 할당
-result5 = num_uniq_raw - num_uniq_new
+result5 = cntcomb1 - cntcomb2
 
 # 결과 출력
 print(result5) # 정답 4
@@ -374,14 +374,14 @@ import pandas as pd
 exam11 = pd.read_csv('data/연습문제/Rabbit.csv')
 
 # 제 3 사분위수, 제 2사분위수 별도 저장
-rabbitq3 = exam11['Dose'].quantile(.75)
-rabbitq2 = exam11['Dose'].median() # quantile(.5)도 됨!
+q3 = exam11['Dose'].quantile(.75)
+q2 = exam11['Dose'].median() # quantile(.5)도 됨!
 
 # 두 값 차이의 절댓값
-rabbitdiff = abs(rabbitq3 - rabbitq2)
+diff = abs(q3 - q2)
 
 # 결과
-result11 = rabbitdiff.astype('int64') # int(rabbitdiff) 도 됨!
+result11 = diff.astype('int64') # int(diff) 도 됨!
 
 # 출력
 print(result11) # 정답: 62

@@ -79,17 +79,22 @@ import pandas as pd
 # """
 
 # exam5 = pd.read_csv('data/연습문제/Cars93.csv')
-# uniq_raw = exam5[['Manufacturer', 'Origin']].drop_duplicates()
-# num_uniq_raw = uniq_raw.shape[0]
+# comb1 = exam5[['Manufacturer', 'Origin']].drop_duplicates()
+# cntcomb1 = comb1.shape[0] # 32개의 조합 도출
 
+# # Manufacturer 컬럼 앞 두 글자만 추출한 결과와 Origin과 유일값 조합의 수
+# # Manufacturer 컬럼 앞 두 글자 추출
 # exam5['sub_str'] = exam5['Manufacturer'].str[:2]
 
-# uniq_new = exam5[['sub_str', 'Origin']].drop_duplicates()
-# num_uniq_new = uniq_new.shape[0]
+# # 유일값 조합의 수
+# comb2 = exam5[['sub_str', 'Origin']].drop_duplicates()
+# cntcomb2 = comb2.shape[0] # 28개의 조합 도출
 
-# result5 = num_uniq_raw - num_uniq_new
+# # 결과 할당
+# result5 = cntcomb1 - cntcomb2
 
-# print(result5)
+# # 결과 출력
+# print(result5) 
 
 # """
 # 6.Cars93 데이터셋을 이용하여 컬럼 Type, Man_trans_avail에 대한 그룹별 RPM 레코드 
@@ -97,7 +102,7 @@ import pandas as pd
 # 레코드 수를 나눈 값들을 빼서 나온 결과의 총 원소 합을 구하여라. 
 # (단, 출력시 소수점은 첫째 자리에서 반올림하여 표현할 것)
 # """
-
+# import pandas as pd
 # exam6 = pd.read_csv('data/연습문제/Cars93.csv')
 
 # rpmcnt = exam6.groupby(['Type', 'Man_trans_avail'])['RPM'].count()
@@ -106,23 +111,154 @@ import pandas as pd
 
 # rpmmid = exam6.groupby(['Type', 'Man_trans_avail'])['RPM'].median()
 
-# calcul = sum(rpmmid - rpmsum / rpmcnt)
+# calcul = sum(rpmmid-rpmsum / rpmcnt)
 
-# result6 = round(calcul, 0)
-# print(result6)
+# print(round(calcul,0))
 
+# """
+# 7. Cars93 데이터셋을 이용하여 RPM 컬럼의 결측치를 평균으로 대체하고 RPM과 Wheelbase 컬럼을 
+# 각각 z-점수 표준화한 후 표준화된 Wheelbase에 상수 -36을 곱한 값과 표준화된 RPM 컬럼의 차이값을 
+# 구하고 표준편차를 산출하여라. 
+# (단, 소수점 셋째 자리까지 반올림하여 표현할 것)
+# """
+# import pandas as pd
 # exam7 = pd.read_csv('data/연습문제/Cars93.csv')
 
-# rpmavg = exam7['RPM'].mean()
+# rpmavg= exam7['RPM'].mean()
 # exam7['RPM'] = exam7['RPM'].fillna(rpmavg)
 
 # rpmz = (exam7['RPM'] - exam7['RPM'].mean()) / exam7['RPM'].std()
 
 # wbz = (exam7['Wheelbase'] - exam7['Wheelbase'].mean()) / exam7['Wheelbase'].std()
 
-# diff = wbz * (-36) - rpmz
+# diff =wbz * (-36) - rpmz
 
-# std = diff.std()
+# diff_std = diff.std()
 
-# result7 = round(std, 3)
+# result7 = round(diff_std, 3)
+
 # print(result7)
+
+# """
+# 8. Cars93 데이터셋을 이용하여 먼저, Price 컬럼의 결측치를 평균으로 대체하고 Max_Price 변수와 
+# Min_Price의 평균보다 작은 레코드만을 추출해 산출된 Origin 그룹별 Price의 합계를 구하고 다음으로 
+# Price 컬럼의 결측치를 중앙값으로 대체하고 Price 컬럼이 Min_Price 컬럼의 제 3사분위수보다 
+# 작은 레코드만을 추출해 산출된 Origin별 Price의 합계를 Origin 그룹별로 합한 후 큰 값을 출력하여라. 
+# (단, 소수점 이하는 모두 절삭하여 정수로 표현할 것)
+# """
+# import pandas as pd
+# exam8 = pd.read_csv('data/연습문제/Cars93.csv')
+
+# df1 = exam8.copy()
+# df2 = exam8.copy()
+
+# priceavg = df1['Price'].mean()
+# df1['Price'] = df1['Price'].fillna(priceavg)
+
+# minmaxavg = df1[['Max_Price', 'Min_Price']].mean(axis = 1)
+
+# subdf1 = df1[df1['Price'] < minmaxavg]
+
+# sum1 = subdf1.groupby('Origin')['Price'].sum()
+
+# med = df2['Price'].median()
+# df2['Price'] = df2['Price'].fillna(med)
+
+# q3 = exam8['Min_Price'].quantile(.75)
+
+# subdf2 = df2[df2['Price'] < q3 ]
+
+# sum2 = subdf2.groupby('Origin')['Price'].sum()
+
+# maxval = max(sum1 + sum2)
+
+# result8 = int(maxval)
+
+# print(result8)
+
+# """
+# 9. Cars93 데이터셋에서 'Price' 컬럼은 'Min_Price'와 'Max_Price'의 평균으로 알려져 있다. 
+# 이와 같은 사실을 통해 'Price' 컬럼의 결측치의 원래의 값을 계산한 후, 
+# 'Price'가 14.7보다 작거나 25.3보다 크면서 'Large' 타입인 레코드 수를 계산하여라. 
+# """
+# print("\n 연습문제 9.")
+# import pandas as pd
+# exam9 = pd.read_csv('data/연습문제/Cars93.csv')
+
+# price = exam9['Price'].copy()
+# maxp = exam9['Max_Price'].copy()
+# minp = exam9['Min_Price'].copy()
+# type = exam9['Type'].copy()
+
+# condna = price.isna()
+
+# price[condna] = (maxp[condna] + minp[condna]) / 2
+
+# cond1 = price < 14.7
+
+# cond2 = (price > 25.3) & (type=='Large')
+
+# cond = cond1 | cond2
+
+# result9 = exam9[cond].shape[0]
+
+# print(result9)
+
+# """
+# 10. Cars93 데이터셋에서 'Make' 컬럼을 이용하여 제조사가 'Chevrolet', 'Pontiac', 'Hyundai'이면서 
+# 'AirBags'이 'Driver'에만 있는 경우의 레코드 수를 계산하여라.
+# """
+# print("\n 연습문제 10.")
+# import pandas as pd
+# exam10 = pd.read_csv('data/연습문제/Cars93.csv')
+
+# make = exam10['Make'].copy()
+# airbag = exam10['AirBags'].copy()
+
+# make = make.str.strip()
+
+# cond1 = make.str.startswith(('Chevrolet','Pontiac','Hyundai'))
+
+# cond2 = (airbag =='Driver only')
+
+# result10 = sum(cond1 & cond2)
+
+# print(result10)
+
+# """
+# 11. Rabbit  데이터셋을 불러와 Dose 컬럼의 제 3사분위수와 제 2사분위수를 구하고 두 값의 차이의 
+# 절댓값을 구한 후 소수점을 버린 값을 출력하여라.
+# """
+# print("\n 연습문제 11.")
+# import pandas as pd
+# exam11 = pd.read_csv('data/연습문제/Rabbit.csv')
+
+# q3 = exam11['Dose'].quantile(.75)
+# q2 = exam11['Dose'].median()
+
+# diff = abs(q3-q2)
+
+# result11=diff.astype('int64')
+
+# print(result11)
+
+"""
+12. Boston 데이터셋을 불러와 medv 컬럼에 대해서 동일한 폭으로 binning한 후 가장 많은 빈도를 가지는 
+구간을 산출하고 해당 구간 내 dis 컬럼의 중앙값을 구하여라.
+(폭은 10을 기준으로 하고 소수점은 둘째 자리까지 나타내시오.)
+"""
+print("\n 연습문제 12.")
+import pandas as pd
+exam12 = pd.read_csv('data/연습문제/Boston.csv')
+
+medv_cut = pd.cut(exam12['medv'], bins = [0,10,20,30,40,50])
+
+mode = medv_cut.value_counts().idxmax()
+
+cond = (medv_cut == mode)
+
+median = exam12['dis'][cond].median()
+
+result12 = round(median, 2)
+
+print(result12)
