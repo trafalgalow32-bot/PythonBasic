@@ -87,6 +87,34 @@ print(b) # (b) 검정통계량, 출력값 2.43
 print(c) # (c) p-값 , 출력값 0.043
 print('기각') # 유의수준 0.05 이내!
 
+print("\n 연습 문제3.")
+import pandas as pd
+exam3 = pd.read_csv('data/연습문제/고객_등급리스트.csv', encoding = 'cp949')
+
+from scipy.stats import chi2_contingency
+import numpy as np
+
+# 교차표 생성
+tb = pd.crosstab(exam3['Segment'], exam3['Region'])
+
+# 카이제곱 검정 수행
+# ch2_contingency의 결과는 카이제곱통계량, 유의확률, 자유도, 기대도수를 반환함
+chi2, pval, df, expected = chi2_contingency(tb)
+
+# (a)E23 : expected의 (1,2) 인덱스 번호 추출
+e23 = expected[1,2]
+e23 = round(e23, 2)
+print(e23) # 출력값 15.74
+
+# (b) 검정 통계량
+chi2 = chi2.astype('int') # 정수 변환
+print(chi2) # 출력값 9
+
+# (c) p-값 / 기각여부
+pval = round(pval, 3)
+print(pval) # 출력값 0.148
+print('채택')
+
 print("\n 연습 문제4.")
 import pandas as pd
 exam4 = pd.read_csv('data/연습문제/Cars93.csv', encoding = 'cp949')
@@ -112,3 +140,59 @@ pval = round(pval, 4)
 pval = int(pval)
 print(pval)
 print('기각')
+
+print("\n 연습 문제5.")
+import pandas as pd
+import numpy as np
+exam5 = pd.read_csv('data/연습문제/Cars93.csv')
+
+# 상관분석에 필요한 컬럼명 저장
+hp = exam5['Horsepower']
+rpm = exam5['Rev_per_mile']
+
+from scipy.stats import pearsonr
+
+# 상관계수 검정 수행
+rho, pval = pearsonr(hp, rpm)
+
+# (a) 표본상관계수
+rho = round(rho, 3)
+print(rho) # 출력값 -0.502
+
+# (b) 검정통계량
+stat = rho/np.sqrt( (1-rho**2) / (len(hp) - 2))
+stat = round(stat, 2)
+print(stat) # 출력값 -5.54
+
+# (c) p-값 / 기각여부
+pval = int(pval)
+print(pval) # 출력값 0
+print('기각')
+
+print("\n 연습 문제6.")
+import pandas as pd
+exam6 = pd.read_csv('data/연습문제/USArrests.csv')
+
+from sklearn.decomposition import PCA
+
+# PCA 수행
+pca = PCA(n_components = 4) # 주성분 객체 생성
+pca.fit_transform(exam6)
+
+# (a) 첫번째 주성분의 폭력범죄 기여 가중치
+# pca.components_.T에서 행은 기존 컬럼(Murder, Assault, UrbanPop, Rape)
+# 열은 1~4 주성분임
+weight= pca.components_.T[1, 0]
+weight = round(weight, 3)
+print(weight) # 출력값 0.995
+
+# (b) 34번째 도시의 1주성분의 주성분 점수
+score = pca.fit_transform(exam6)[33,0]
+score = round(score, 3)
+print(score)   # 출력값 -127.496
+
+# (c) 주성분별 설명되는 분산비율을 시리즈 객체로 저장
+var_ratio = pd.Series(pca.explained_variance_ratio_)
+result = round(var_ratio[0], 2)
+print(result) # 출력값 0.97
+print(3)

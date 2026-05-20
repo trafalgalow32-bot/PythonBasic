@@ -125,7 +125,7 @@ exam4 = pd.read_csv('data/연습문제/Cars93.csv')
 # Weight 컬럼 Min_Max 정규화로 변환 ( ※ mms: MinMaxScaling의 약어)
 # MinMax 정규화 공식: (변량 - 최소값) / (최대값 - 최소값)
 wt = exam4['Weight']
-wt_mms = (wt - min(wt)) / (max(wt) - min(wt))
+wt_mms = (wt - wt.min()) / (wt.max() - wt.min())
 
 # Min_max 정규화 값이 0.5보다 작은 weight들의 분산
 var_under = wt_mms[wt_mms < 0.5].var()
