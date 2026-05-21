@@ -125,16 +125,16 @@ exam4 = pd.read_csv('data/연습문제/Cars93.csv')
 # Weight 컬럼 Min_Max 정규화로 변환 ( ※ mms: MinMaxScaling의 약어)
 # MinMax 정규화 공식: (변량 - 최소값) / (최대값 - 최소값)
 wt = exam4['Weight']
-wt_mms = (wt - wt.min()) / (wt.max() - wt.min())
+mms = (wt - wt.min()) / (wt.max() - wt.min())
 
 # Min_max 정규화 값이 0.5보다 작은 weight들의 분산
-var_under = wt_mms[wt_mms < 0.5].var()
+cond1 = mms[mms < 0.5].var()
 
 # Min_max 정규화 값이 0.5보다 큰 weight들의 분산
-var_over = wt_mms[wt_mms > 0.5].var()
+cond2 = mms[mms > 0.5].var()
 
 # 차이 계산
-diff = abs(var_over - var_under)
+diff = abs(cond1 - cond2)
 
 # 결과 할당
 result4 = round(diff, 3)
@@ -161,6 +161,7 @@ cntcomb1 = comb1.shape[0] # 32개의 조합 도출
 
 # Manufacturer 컬럼 앞 두 글자만 추출한 결과와 Origin과 유일값 조합의 수
 # Manufacturer 컬럼 앞 두 글자 추출
+# 기존 csv 파일에 없는 'sub_str'이라는 새 컬럼명을 만들어서 데이터 조회! 앞 두 글자만 따서!
 exam5['sub_str'] = exam5['Manufacturer'].str[:2]
 
 # 유일값 조합의 수
@@ -448,12 +449,12 @@ zstd2 = (df2['thickness'] - avg)/std
 
 # -1과 1 사이 값들의 중앙값을 각각 산출
 # -1과 1사이 값
-sub_zstd1 = zstd1[(zstd1 >= -1) & (zstd1 <= 1)]
-sub_zstd2 = zstd2[(zstd2 >= -1) & (zstd2 <= 1)]
+cond1 = zstd1[(zstd1 >= -1) & (zstd1 <= 1)]
+cond2 = zstd2[(zstd2 >= -1) & (zstd2 <= 1)]
 
 # 중앙값
-med1 = sub_zstd1.median()
-med2 = sub_zstd2.median()
+med1 = cond1.median()
+med2 = cond2.median()
 
 # 결과 
 result13 = round(med1 + med2, 4)
