@@ -196,3 +196,125 @@ var_ratio = pd.Series(pca.explained_variance_ratio_)
 result = round(var_ratio[0], 2)
 print(result) # 출력값 0.97
 print(3)
+
+print("\n 연습 문제7.")
+import pandas as pd
+exam7 = pd.read_csv('data/연습문제/Cars93.csv')
+
+import statsmodels.api as sm
+
+# 회귀분석 수행: 회귀 분석에 필요한 컬럼 별도 지정
+colnm = ['Price', 'Rev_per_mile', 'Weight', 'Length', 'EngineSize']
+samp = exam7[colnm].dropna() # 결측치 제거
+
+# y, X에 각각 할당
+y = samp['Price']
+X = samp[['Rev_per_mile', 'Weight', 'Length', 'EngineSize']]
+X = sm.add_constant(X) # 절편항 적합을 위해 상수벡터 추가
+
+# 모델 적합
+model = sm.OLS(y,X) # OLS 객체 생성
+result = model.fit() # fit 메소드를 통해 모형 적합
+
+# result.params # 회귀 계수만 추출
+# result.tvalues # t통계량만 추출
+result.summary() # 해당 코드를 통해 회귀분석 통합 결과를 확인하고 값을 입력하면 됨
+# print(result.summary())
+
+# (a) 결정계수
+# r_square = 0.396
+# print(r_square)
+
+# (b) 문제의 의도는 Weight의 추정 회귀 계수를 출력하는 것이다.
+b = 0.0023 # result.summary() 했을 때 Weight coef가 가리키는 첫번째 값? (이건 짚고 넘어가기!)
+
+# (c) 문제의 의도는 Weight의 P>|t|을 통해 회귀계수를 검정하는 것이다. 
+pval = 0.158
+print(pval)
+
+# (d) 문제의 의도는 Weight의 회귀계수에 대한 95% 신뢰구간을 구하는 것이다. 
+# 이 코드의 상한 값을 입력! result.conf_int(alpha = 0.05, cols = None)
+# print(result.conf_int(alpha = 0.05, cols = None))
+upper = 0.005406
+upper = round(upper, 4)
+print(upper)
+
+print("\n 연습 문제8.")
+import pandas as pd
+exam8 = pd.read_csv('data/연습문제/job.csv')
+
+import statsmodels.api as sm
+import numpy as np
+
+# x2 컬럼 : M -> 1, F -> 0
+exam8['x2'] = exam8['x2'].map({'M' : 1, 'F': 0})
+
+# y, X에 각각 할당
+y = exam8['y']
+X = exam8[['x1', 'x2', 'x3']]
+X = sm.add_constant(X) # 절편항 적합을 위해 상수벡터 추가
+
+# 모델 적합
+model = sm.GLM(y, X, family = sm.families.Binomial())
+result = model.fit()
+
+# (a) 절편항 추정 회귀 계수
+# print(result.summary()) # 확인 코드
+b0 = -0.808
+print(b0)
+
+# (b) 여성에 비해 남성의 성공에 대한 오즈가 몇 배인지를 구하려면
+# 오즈비 = 남성의 성공 오즈 / 여성의 성공 오즈
+#       = x2 컬럼이 성별이므로 exp(beta2)를 구하면 됨
+odds_ratio = round(np.exp(-0.1575), 3) # result.summary()로 확인
+print(odds_ratio) # 출력값 0.854
+
+# (c) 9번째 사람의 성공 예측 확률
+y_prob = round(result.predict(X)[8], 4)
+print(y_prob) # 출력값 0.5344
+print(0)
+
+print("\n 연습 문제9.")
+import pandas as pd
+exam9 = pd.read_csv('data/연습문제/영화_순위리스트.csv', encoding = 'cp949')
+
+from scipy.stats import bartlett
+import numpy as np
+
+genre = exam9['장르']
+budget = exam9['예산']
+
+# 장르별 예산 값 할당
+b_thirller = budget[genre == 'Thriller']
+b_comedy = budget[genre == 'Comedy']
+b_drama = budget[genre == 'Drama']
+b_action = budget[genre == 'Action']
+
+# (a) 합동 분산(pooled variance)
+# 집단별 표본 분산
+var_i = [b_thirller.var(), b_comedy.var(), b_drama.var(), b_action.var()]
+
+# 집단별 관측치 수
+n_i = [len(b_thirller), len(b_comedy), len(b_drama), len(b_action)]
+
+# log(합동분산) 계산
+N = sum(n_i)
+k = 4 # 집단의 수
+
+log_sp2 = np.log(sum(np.subtract(n_i, 1) * var_i) / (N-k))
+log_sp2 = round(log_sp2, 3)
+
+print(log_sp2) # 출력값 16.542
+
+# (b)-(c) : Bartlett Test 수행
+stat, pval = bartlett(b_thirller, b_comedy, b_drama, b_action)
+
+#(b) 검정통계량
+stat = round(stat, 2)
+print(stat) # 출력값 13.44
+
+# (c) p-값 / 기각여부
+pval = round(pval, 4)
+print(pval) # 출력값 0.0038
+
+print('기각')
