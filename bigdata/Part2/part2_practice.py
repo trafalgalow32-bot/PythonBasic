@@ -250,15 +250,15 @@ df1 = exam8.copy()
 df2 = exam8.copy()
 
 # Case1. Price 컬럼의 결측치를 평균으로 대체
-priceavg = df1['Price'].mean() # Price 컬럼의 결측치를 제외한 평균
-df1['Price'] = df1['Price'].fillna(priceavg)
+pavg = df1['Price'].mean() # Price 컬럼의 결측치를 제외한 평균
+df1['Price'] = df1['Price'].fillna(pavg)
 
 # Price가 Max_Price와 Min_Price의 평균보다 작은 데이터프레임을 추출
 # Max_Price와 Min_Price의 컬럼별 평균
-minmaxavg = df1[['Max_Price', 'Min_Price']].mean(axis = 1)
+mavg = df1[['Max_Price', 'Min_Price']].mean(axis = 1)
 
 # Price가 위의 평균보다 작은 프레임
-subdf1 = df1[df1['Price'] < minmaxavg]
+subdf1 = df1[df1['Price'] < mavg]
 
 # Origin 그룹별 Price의 합계
 sum1 = subdf1.groupby('Origin')['Price'].sum()
@@ -305,10 +305,10 @@ minp = exam9['Min_Price'].copy()
 type = exam9['Type'].copy()
 
 # 'Price' 컬럼이 결측인 조건
-condna = price.isna()
+isna = price.isna()
 
 # 'Price'가 결측치인 경우만 'Min_Price'와 'Max_Price'의 평균을 할당
-price[condna] = (maxp[condna] + minp[condna]) / 2
+price[isna] = (maxp[isna] + minp[isna]) / 2
 
 # 'Price'가 14.7보다 작거나 25.3보다 크면서 'Large' 타입인 레코드 수
 # 조건1
@@ -353,7 +353,7 @@ airbag = exam10['AirBags'].str.strip()
 make = make.str.strip()
 
 ### 조건
-# 튜플로 입력 시 여러 문자열로 시작하는 경우에 대한 Bool 결rhk를 찾을 수 있음
+# 튜플로 입력 시 여러 문자열로 시작하는 경우에 대한 Bool 결과를 찾을 수 있음
 # 문자열이 'Chevrolet' 또는 'Pontiac' 또는 'Hyundai'로 시작하면 True를 반환함
 cond1 = make.str.startswith(('Chevrolet', 'Pontiac', 'Hyundai'))
 
@@ -412,10 +412,10 @@ mode = medv_cut.value_counts().idxmax()
 cond = (medv_cut == mode)
 
 #중앙값
-median = exam12['dis'][cond].median()
+med = exam12['dis'][cond].median()
 
 # 결과
-result12 = round(median, 2)
+result12 = round(med, 2)
 
 # 출력
 print(result12) # 정답 3.95
