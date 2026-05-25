@@ -1,38 +1,36 @@
 # part3_practice.py
 
+"""
+(a): 표본 평균을 계산하는 것으로 데이터로부터 (실험군 혈압 변화-대조군 혈압변화)을 계산한 후 문제에서 요구하는 
+형태에 맞게 출력한다.
+"""
 print("연습 문제1.")
-import pandas as pd
-exam1 = pd.read_csv('data/연습문제/Cars93.csv')
-
-"""
-(a): 표본 평균을 계산하는 것으로 데이터로부터 (실험군 혈압 변화-대조건 혈압변화)을 계산한 후 문제에서 요구하는 형태에 맞게 출력한다.
-"""
 import pandas as pd
 exam1 = pd.read_csv('data/연습문제/Rabbit_Five.csv', encoding= 'cp949')
 
 from scipy.stats import ttest_rel
 
 # 필요한 컬럼 각각 할당
-bp_change = exam1['BP_change']
-treatment = exam1['Treatment']
+bp = exam1['BP_change']
+treat = exam1['Treatment'] # Control, MDL의 컬럼임!
 
 # Treatment가 Control인 경우(대조군)와 MDL인 경우(실험군)의 BP_change 값 각각 할당
-bpc_treat = bp_change[treatment == "MDL"].reset_index(drop = True)
-bpc_control = bp_change[treatment == "Control"].reset_index(drop = True)
+mdl = bp[treat == "MDL"].reset_index(drop = True)
+control = bp[treat == "Control"].reset_index(drop = True)
 
 # (a) 점추정량 = mean(PC_Treat - PC_Control)
-diff_avg = (bpc_treat - bpc_control).mean()
+diff_avg = (mdl - control).mean()
 diff_avg = round(diff_avg, 2)
 print(diff_avg) # 출력값 -4.68
 
 """
-(b)-(c) ttest_rel() 함수를 통해 가설 검정을 수행하고 결과에서 제공하는 검정통계량과 p-값을 각각 문제에서 요구하는 형태에 맞게
-출력한다. p-값이 0.001이므로 본 가설 검정은 '기각'한다.
+(b)-(c) ttest_rel() 함수를 통해 가설 검정을 수행하고 결과에서 제공하는 검정통계량과 p-값을 각각 문제에서 
+요구하는 형태에 맞게 출력한다. 
 """
 # (b)-(c)
 
 # 대응표본 t검정 수행
-a = ttest_rel(bpc_treat, bpc_control)
+a = ttest_rel(mdl, control)
 
 # (b) 검정 통계량
 stat = a.statistic
@@ -43,6 +41,9 @@ print(stat) # 출력값 -3.67
 pval = a.pvalue
 pval = round(pval, 3)
 print(pval) # 출력값 0.001
+"""
+p-값이 0.001이므로 본 가설 검정은 '기각'한다.
+"""
 print('기각')
 
 print("\n 연습 문제2.")
@@ -67,7 +68,7 @@ print(round(var_ratio, 2)) # 출력값 2.43
 # F검정 수행
 # (b) 검정통계량 = (a)와 같음
 stat = var_ratio
-print(stat)
+print(round(stat,2)) # 출력값 2.43
 
 # (c) 유의 확률
 # 자유도
@@ -125,7 +126,7 @@ price = exam4['Price'].copy().dropna()
 # (a) 표본평균
 avg = price.mean()
 avg = round(avg, 2)
-print(avg)
+print(avg) # 출력값 19.05
 
 #(b)-(c)
 # 샤피로 윌크 검정 수행
@@ -133,11 +134,11 @@ stat, pval = shapiro(price)
 
 # (b) 검정 통계량
 stat = round(stat, 2)
-print(stat)
+print(stat) # 출력값 0.85
 
 # (c) p-값 기각 여부
-pval = round(pval, 4)
-pval = int(pval)
+pval = round(pval, 4) # 출력값 0.0
+pval = int(pval) # 출력값 0
 print(pval)
 print('기각')
 
@@ -153,14 +154,14 @@ rpm = exam5['Rev_per_mile']
 from scipy.stats import pearsonr
 
 # 상관계수 검정 수행
-rho, pval = pearsonr(hp, rpm)
+corr, pval = pearsonr(hp, rpm)
 
 # (a) 표본상관계수
-rho = round(rho, 3)
-print(rho) # 출력값 -0.502
+corr = round(corr, 3)
+print(corr) # 출력값 -0.502
 
 # (b) 검정통계량
-stat = rho/np.sqrt( (1-rho**2) / (len(hp) - 2))
+stat = corr/np.sqrt( (1-corr**2) / (len(hp) - 2))
 stat = round(stat, 2)
 print(stat) # 출력값 -5.54
 
