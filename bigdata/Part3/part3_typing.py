@@ -166,7 +166,15 @@ X = sm.add_constant(X)
 
 model = sm.OLS(y, X)
 result = model.fit()
-result.summary()
+# print(result.summary())
+# r_square = 0.396
+# print(r_square)
+pval = 0.158
+print(pval)
+
+upper = 0.005406
+upper = round(upper, 4)
+print(upper)
 
 """
 여기부터 집중이 안돼서 잠시 그만뒀었다! 특히 " P>|t|" 이게 뭔뜻인지 몰라서 잠시 망설이고 있었던 걸로 기억한다. 
