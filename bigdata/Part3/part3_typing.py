@@ -151,32 +151,88 @@
 # print(result)
 
 # 연습문제7.
-print("\n 연습 문제7.")
+# print("\n 연습 문제7.")
+# import pandas as pd
+# exam7 = pd.read_csv('data/연습문제/Cars93.csv')
+
+# import statsmodels.api as sm
+
+# colnm = ['Price', 'Rev_per_mile', 'Weight' , 'Length', 'EngineSize']
+# samp = exam7[colnm].dropna()
+
+# y = samp['Price']
+# X = samp[['Rev_per_mile', 'Weight' , 'Length', 'EngineSize']]
+# X = sm.add_constant(X)
+
+# model = sm.OLS(y, X)
+# result = model.fit()
+# # print(result.summary())
+# # r_square = 0.396
+# # print(r_square)
+# pval = 0.158
+# print(pval)
+
+# upper = 0.005406
+# upper = round(upper, 4)
+# print(upper)
+
+# 연습문제8.
+# print("\n 연습 문제8.")
+# import pandas as pd
+# exam8 = pd.read_csv('data/연습문제/job.csv')
+
+# import statsmodels.api as sm
+# import numpy as np
+
+# exam8['x2'] = exam8['x2'].map({'M' : 1, 'F' : 0})
+
+# y = exam8['y']
+# X = exam8[['x1', 'x2', 'x3']]
+# X = sm.add_constant(X)
+
+# model = sm.GLM(y, X, family = sm.families.Binomial())
+# result = model.fit()
+# # print(result.summary())
+
+# b0 = -0.808
+
+# odds_ratio = round(np.exp(-0.1575), 3)
+
+# y_prob = round(result.predict(X)[8], 4)
+# print(y_prob)
+
+# 연습문제9.
+print("\n 연습 문제9.")
 import pandas as pd
-exam7 = pd.read_csv('data/연습문제/Cars93.csv')
+exam9 = pd.read_csv('data/연습문제/영화_순위리스트.csv', encoding='cp949')
 
-import statsmodels.api as sm
+from scipy.stats import bartlett
+import numpy as np
 
-colnm = ['Price', 'Rev_per_mile', 'Weight' , 'Length', 'EngineSize']
-samp = exam7[colnm].dropna()
+genre = exam9['장르']
+budget = exam9['예산']
 
-y = samp['Price']
-X = samp[['Rev_per_mile', 'Weight' , 'Length', 'EngineSize']]
-X = sm.add_constant(X)
+b_thriller = budget[genre =='Thriller']
+b_comedy = budget[genre =='Comedy']
+b_drama = budget[genre =='Drama']
+b_action = budget[genre =='Action']
 
-model = sm.OLS(y, X)
-result = model.fit()
-# print(result.summary())
-# r_square = 0.396
-# print(r_square)
-pval = 0.158
+var_i = [b_thriller.var(), b_comedy.var(), b_drama.var(), b_action.var()]
+
+n_i = [len(b_thriller), len(b_comedy), len(b_drama), len(b_action)]
+
+N = sum(n_i)
+k = 4
+
+log_sp2 = np.log(sum(np.subtract(n_i, 1) * var_i) / (N-k))
+log_sp2 = round(log_sp2, 3)
+
+print(log_sp2)
+
+stat, pval = bartlett(b_thriller, b_comedy, b_drama, b_action)
+
+stat = round(stat,2)
+print(stat)
+
+pval = round(pval, 4)
 print(pval)
-
-upper = 0.005406
-upper = round(upper, 4)
-print(upper)
-
-"""
-여기부터 집중이 안돼서 잠시 그만뒀었다! 특히 " P>|t|" 이게 뭔뜻인지 몰라서 잠시 망설이고 있었던 걸로 기억한다. 
-이거 AI에게 물어보면서 이어가라!
-"""

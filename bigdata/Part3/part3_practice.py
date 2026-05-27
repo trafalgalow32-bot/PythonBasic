@@ -227,7 +227,7 @@ result.summary() # 해당 코드를 통해 회귀분석 통합 결과를 확인�
 # print(r_square)
 
 # (b) 문제의 의도는 Weight의 추정 회귀 계수를 출력하는 것이다.
-b = 0.0023 # result.summary() 했을 때 Weight coef가 가리키는 첫번째 값? (이건 짚고 넘어가기!)
+b = 0.0023 # result.summary() 했을 때 Weight coef가 가리키는 첫번째 값!
 
 # (c) 문제의 의도는 Weight의 P>|t|을 통해 회귀계수를 검정하는 것이다. 
 pval = 0.158
@@ -286,17 +286,17 @@ genre = exam9['장르']
 budget = exam9['예산']
 
 # 장르별 예산 값 할당
-b_thirller = budget[genre == 'Thriller']
+b_thriller = budget[genre == 'Thriller']
 b_comedy = budget[genre == 'Comedy']
 b_drama = budget[genre == 'Drama']
 b_action = budget[genre == 'Action']
 
 # (a) 합동 분산(pooled variance)
 # 집단별 표본 분산
-var_i = [b_thirller.var(), b_comedy.var(), b_drama.var(), b_action.var()]
+var_i = [b_thriller.var(), b_comedy.var(), b_drama.var(), b_action.var()]
 
 # 집단별 관측치 수
-n_i = [len(b_thirller), len(b_comedy), len(b_drama), len(b_action)]
+n_i = [len(b_thriller), len(b_comedy), len(b_drama), len(b_action)]
 
 # log(합동분산) 계산
 N = sum(n_i)
@@ -308,7 +308,7 @@ log_sp2 = round(log_sp2, 3)
 print(log_sp2) # 출력값 16.542
 
 # (b)-(c) : Bartlett Test 수행
-stat, pval = bartlett(b_thirller, b_comedy, b_drama, b_action)
+stat, pval = bartlett(b_thriller, b_comedy, b_drama, b_action)
 
 #(b) 검정통계량
 stat = round(stat, 2)
