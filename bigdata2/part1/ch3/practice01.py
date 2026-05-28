@@ -100,3 +100,88 @@ exam4.iloc[:10, -1] = min
 
 # views 컬럼의 합
 print(int(exam4['views'].sum())) # 출력값 652812
+
+"""
+05. 문자열 슬라이싱, 파생변수, 평균값
+(이전 단계의 결과를 사용!)
+'f4' 컬럼에 'FJ'가 포함된 데이터를 찾으시오.
+찾은 데이터 중에서 'f2'컬럼의 평균값을 구하시오.(반올림 후 소수 둘째 자리까지 계산)
+"""
+print("\n Q5")
+import pandas as pd
+exam5 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# f4 컬럼에서 뒤에 2개 값 슬라이싱
+# print(exam5)
+exam5['new'] = exam5['f4'].str[2:4]
+
+# FJ인 데이터 찾기
+cond = exam5['new'] == 'FJ'
+exam5 = exam5[cond]
+
+# f2 평균 구하기
+print(round(exam5['f2'].mean(),2)) # 출력값 0.61
+
+"""
+06. 필터링, 분산
+(이전 단계의 결과를 사용!)
+'f3' 컬럼이 gold이면서 'f2'컬럼이 2인 데이터를 찾으시오.
+찾은 데이터에서 'f1' 컬럼의 분산을 구하시오. (반올림 후 소수 둘째 자리까지 계산)
+"""
+print("\n Q6")
+import pandas as pd
+exam6 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+# print(exam6)
+cond = exam6[(exam6['f3']=='gold')&(exam6['f2']==2)] 
+# 다른 풀이 : cond1 = exam6['f3']=='gold', cond2 = exam6['f2']==2, exam6 = exam6[cond1 & cond2]
+# print(exam6[cond])
+# print(exam6[(exam6['f3']=='gold')&(exam6['f2']==2)])
+f1_var = cond['f1'].var()
+f1_var = round(f1_var,2)
+print(f1_var) # 출력값 235.43
+
+"""
+07. 값 변경(연산), 필터링 절댓값
+(이전 단계의 결과를 사용!)
+모든 나이(age)에 1을 더하시오.
+20대의 'views' 평균과 30대의 'views' 평균의 차이의 절댓값을 구하시오. (반올림 후 소수 둘째자리까지 계산)
+"""
+print("\n Q7")
+import pandas as pd
+exam7 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+exam7['age'] = exam7['age'] + 1
+
+# 20대, 30대 조건
+cond1 = (exam7['age'] >= 20) & (exam7['age'] < 30)
+cond2 = (exam7['age'] >= 30) & (exam7['age'] < 40)
+
+# 30대 views
+result = abs(exam7[cond1]['views'].mean() - exam7[cond2]['views'].mean())
+print(round(result,2)) # 출력값 263.13
+
+"""
+08. 값 변경(연산), 필터링 절댓값
+(이전 단계의 결과를 사용!)
+'subscribed' 컬럼이 2024년 2월인 데이터를 찾으시오.
+위에서 찾은 데티어 중 'f3' 컬럼이 gold인 데이터의 개수를 구하시오.
+"""
+print("\n Q8")
+import pandas as pd
+exam8 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# 자료형 변환
+exam8['subscribed'] = pd.to_datetime(exam8['subscribed'])
+
+# 파생변수 생성(연, 월)
+exam8['year'] = exam8['subscribed'].dt.year
+exam8['month'] = exam8['subscribed'].dt.month
+
+# 2024년 2월이고, 'f3'이 gold인 데이터
+cond1 = exam8['year'] == 2024
+cond2 = exam8['month'] == 2
+cond3 = exam8['f3'] == 'gold'
+exam8 = exam8[cond1 & cond2 & cond3]
+
+# 데이터 개수
+print(len(exam8)) # 출력값 5
