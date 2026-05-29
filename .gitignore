@@ -4,6 +4,14 @@ venv/
 env/
 .env/
 
+# Yolo 프로젝트 제외 규칙
+Yolo/venv/
+Yolo/runs/
+Yolo/*.mp4
+
+# Reactwork 프로젝트 제외 규칙
+Reactwork/node_modules/
+
 # IDE 설정 파일 (사용자 PC마다 다름)
 .vscode/
 .idea/
@@ -13,3 +21,43 @@ __pycache__/
 # OS 시스템 파일
 .DS_Store
 Thumbs.db
+
+# 모델 가중치 (Ultralytics가 알아서 다운로드해주므로 굳이 올릴 필요 없음)
+*.pt
+*.pth
+*.onnx
+
+# 영상 파일
+*.mp4
+videos/
+
+# ==========================================
+# Reactwork (Frontend) 제외 규칙
+# ==========================================
+# Logs
+Reactwork/logs
+Reactwork/*.log
+Reactwork/npm-debug.log*
+Reactwork/yarn-debug.log*
+Reactwork/yarn-error.log*
+Reactwork/pnpm-debug.log*
+Reactwork/lerna-debug.log*
+
+# Dependencies & Build outputs (★매우 중요★)
+Reactwork/node_modules/
+Reactwork/dist/
+Reactwork/dist-ssr/
+Reactwork/*.local
+
+# ==========================================
+# 공통 에디터 및 OS 개인 설정 파일
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

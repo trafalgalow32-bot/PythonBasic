@@ -1,0 +1,7 @@
+react 서버 실행 명령어
+npm run dev
+
+fastapi 실행 명령어
+uvicorn main:app --reload
+
+http://localhost:8000/students

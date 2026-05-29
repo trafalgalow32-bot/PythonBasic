@@ -185,3 +185,101 @@ exam8 = exam8[cond1 & cond2 & cond3]
 
 # 데이터 개수
 print(len(exam8)) # 출력값 5
+
+"""
+09. 필터링, 카테고리, 최빈값
+'views' 컬럼 값이 1000이하인 데이터(결측치 제외)를 찾잇오.
+앞에서 구한 데이터 중 'f4' 컬럼의 최빈값을 구하시오.
+"""
+print("\n Q9")
+import pandas as pd
+exam9 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# # 풀이1, 근데 풀이2가 더 낫다!
+# # views 수가 1000 이하
+# cond = exam9['views'] <= 1000
+# exam9 = exam9[cond]
+# # print(len(exam9))
+
+# # f4 컬럼 종류별 개수
+# exam9 = exam9['f4'].value_counts()
+# # print(exam9)
+
+# # f4 컬럼 최빈값
+# print(exam9.index[0])
+
+# 풀이2. 이걸로 가자!
+cond = exam9['views'] <= 1000
+
+exam9 = exam9[cond]
+
+print(exam9['f4'].mode()[0])
+
+"""
+10. 그룹핑, 최댓값, 정렬
+결측치가 있는 행을 삭제하시오.
+결측치가 삭제된 데이터를 사용하여 지역별(city) 평균을 계산하시오.
+앞에서 계산한 지역별 평균 데이터에서 'f2' 컬럼 값이 가장 큰 지역을 구하시오.
+"""
+print("\n Q10")
+import pandas as pd
+exam10 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# 결측치 있는 행 삭제
+exam10 = exam10.dropna()
+
+# 지역별 평균 계산
+exam10 = exam10.groupby(['city']).mean(numeric_only=True)
+
+# f2 컬럼이 가장 큰 지역 출력
+print(exam10['f2'].idxmax())
+
+"""
+11. 슬라이싱, 사분위수, 결측치 제거
+데이터에서 결측치가 있는 데이터(행)를 모두 제거하시오.
+결측치가 제거된 데이터를 사용하여 앞에서부터 70% 데이터를 구하시오. 
+(단, 데이터 70% 지점의 index 가 소수점으로 계산될 경우 소수점 이하는 버림)
+앞에서 구한 70% 데이터 중 'views' 컬럼의 3사분위수에서 1사분위수를 뺀 값을 소수점 이하를 버리고 정수 부분만 구하시오.
+"""
+print("\n Q11")
+import pandas as pd
+exam11 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# 결측치 있는 데이터 제거
+exam11 = exam11.dropna()
+# print(len(exam11.isna()))
+
+# 70% 지점
+end = int(len(exam11) * 0.7)
+
+# 70% 데이터 슬라이싱
+exam11 = exam11.iloc[:end]
+
+# 3사분위수, 1사분위수
+q3 = exam11['views'].quantile(.75)
+q1 = exam11['views'].quantile(.25)
+
+print(int(q3 - q1)) # 출력값 2771
+
+"""
+12. 결측치 처리, 최빈값, 데이터 개수
+결측치가 가장 많은 두 컬럼을 찾으시오.
+첫 번째로 결측치가 많은 컬럼에서 결측치가 있는 데이터(행)를 삭제하시오.
+두 번째로 결측치가 많은 컬럼을 최빈값으로 대체하시오.
+'f3' 컬럼의 'gold' 값을 가진 데이터의 수를 정수형으로 구하시오.
+"""
+print("\n Q12")
+import pandas as pd
+exam12 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# print(exam12.isnull().sum()) # f1, f3 컬럼
+
+# 특정 컬럼에 결측치가 있을 경우 해당 행 제거
+exam12 = exam12.dropna(subset=['f1'])
+
+# 두 번째로 결측치가 많은 컬럼 최빈값 대체
+freq = exam12['f3'].mode()[0]
+exam12['f3'] = exam12['f3'].fillna(freq)
+
+# f3 컬럼이 gold인 데이터의 수
+print(sum(exam12['f3'] == 'gold')) # 출력값 63
