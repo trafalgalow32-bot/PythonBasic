@@ -1,5 +1,5 @@
 # practice01.py
-
+# Part1 연습문제 1~ 19
 """
 01. 필터링, 최솟값, 중앙값
 
@@ -283,3 +283,175 @@ exam12['f3'] = exam12['f3'].fillna(freq)
 
 # f3 컬럼이 gold인 데이터의 수
 print(sum(exam12['f3'] == 'gold')) # 출력값 63
+
+"""
+13. 결측 데이터 찾기, 필터링, 평균값
+'f1' 컬럼에 결측치가 있는 데이터만 선택하시오.
+선택된 데이터에서 'age' 컬럼의 평균값을 구하시오. (반올림 후 소수 첫째 자리까지 계산)
+"""
+print("\n Q13")
+import pandas as pd
+exam13 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# 결측치가 있는 데이터 True / False
+cond = exam13['f1'].isnull()
+
+# 결측치가 있는 데이터 선택
+exam13 = exam13[cond]
+
+# age의 평균
+result = exam13['age'].mean()
+
+print(round(result, 1)) # 출력값 53.6
+
+"""
+14. 중복 데이터 제거, 값 변경, 데이터 개수
+중복 데이터를 제거하시오.
+'f3' 컬럼의 결측치는 0, 'silver'는 1, 'gold'는 2, 'vip'는 3으로 변환하시오.
+변환된 'f3' 컬럼의 총합을 정수형으로 구하시오.
+"""
+print("\n Q14")
+import pandas as pd
+exam14 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# 중복 데이터 제거
+exam14 = exam14.drop_duplicates()
+
+# 값 대체
+import numpy as np
+dict_list =  {np.nan:0, 'silver' : 1, 'gold' : 2, 'vip' :3}
+"""
+다른 풀이
+# 1. 결측치(NaN)를 먼저 0으로 채우기 (fillna 사용)
+exam14['f3'] = exam14['f3'].fillna(0)
+
+# 2. 나머지 문자열들을 원하는 숫자로 변경하기 (replace 사용)
+exam14['f3'] = exam14['f3'].replace({'silver': 1, 'gold': 2, 'vip': 3})
+"""
+
+exam14['f3'] = exam14['f3'].map(dict_list)
+
+# f3 컬럼의 총합
+print(int(exam14['f3'].sum())) # 출력값 167
+
+"""
+15. 컬럼 삭제, 행 단위 합계, 필터링
+주어진 데이터에서 문자 자료형 컬럼을 삭제하시오.
+숫자 자료형 컬럼의 결측치를 0으로 대체하시오.
+각 행의 합이 3000보다 큰 값의 개수를 정수로 구하시오. (각 행의 합: 'age' + 'f1' + 'f2' + 'f5' + 'views')
+"""
+print("\n Q15")
+import pandas as pd
+exam15 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# print(exam15)
+
+# 자료형이 object가 아닌 컬럼 선택
+cols = exam15.select_dtypes(exclude='object').columns
+exam15 = exam15[cols]
+
+print(exam15) # exclude='object'는 문자형 자료형을 배제하라는 뜻?
+
+# 결측치 0으로 대체
+exam15 = exam15.fillna(0)
+
+# 행과 열 변경
+exam15 = exam15.T
+
+# 행별 합이 3000 이상인 데이터의 수
+print(sum(exam15.sum() > 3000)) # 출력값 88
+
+"""
+16. 이상치, IQR
+'views' 컬럼의 1사분위수, 3사분위수 그리고 IQR을 계산하시오.
+이상치 조건에 맞는 데이터를 찾으시오. (이상치는 1분위수 - (IQR * 1.5)보다 작은 값과 3사분위수 + (IQR  * 1.5)보다 큰 값)
+이상치 데이터의 'views' 컬럼 합을 정수로 구하시오.
+"""
+print("\n Q16")
+import pandas as pd
+exam16 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# 사분위수
+q3 = exam16['views'].quantile(.75)
+q1 = exam16['views'].quantile(.25)
+
+# IQR
+iqr = q3 - q1
+
+# 이상치 기준
+cond1 = q1 - 1.5 * iqr
+cond2 = q3 + 1.5 * iqr
+
+# 이상치 만족하는 값 찾기
+exam16 = exam16[(exam16['views'] < cond1) | (exam16['views'] > cond2)]
+
+print(int(exam16['views'].sum())) # 출력값 77699
+
+"""
+17. 이상치, 소수점 있는 데이터 찾기, 표준편차
+'views' 컬럼의 표준편차를 구하시오.
+'age' 컬럼의 이상치(소수점 나이, 음수 나이, 0살)를 제거하고, 'views' 컬럼의 표준편차를 구하시오.
+이상치 제거 전후의 'views' 컬럼의 표준편차를 더하여, 반올림 후 소수 둘째 자리까지 구하시오.
+"""
+print("\n Q17")
+import pandas as pd
+exam17 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+r1 = exam17['views'].std()
+
+cond = exam17['age'] <= 0
+exam17 = exam17[~cond]
+
+# 소수점 없는 값 선택
+cond = exam17['age'] == round(exam17['age'], 0)
+exam17 = exam17[cond]
+
+r2 = exam17['views'].std()
+
+print(round(r1+r2, 2)) # 출력값 8297.31
+
+"""
+18. 데이터(행) 기준 평균값, 인덱싱
+index '2001' 데이터(행)에서 평균보다 큰 값의 개수를 구하시오.
+index '2003' 데이터(행)에서 평균보다 작은 값의 개수를 구하시오.
+두 개수를 더하시오.
+"""
+print("\n Q18")
+import pandas as pd
+exam18 = pd.read_csv('bigdata2/part1/ch3/type1_data2.csv', index_col="year")
+# print(exam18)
+
+# 2001, 평균보다 큰 값 합계
+m1 = exam18.loc[2001].mean()
+cond1 = exam18.loc[2001] > m1
+r1 = sum(cond1)
+
+# 2003, 평균보다 작은 값 합계
+m2 = exam18.loc[2003].mean()
+cond2 = exam18.loc[2003] < m2
+r2 = sum(cond2)
+
+print( r1 + r2) # 출력값 202
+
+"""
+19.결측치(뒤의 값으로 대체), 그룹합
+결측치를 바로 뒤에 있는 값으로 대체하시오. (바로 뒤의 값도 결측치일 경우, 뒤에 있는 데이터 중 가장 가까운 값으로 대체)
+'city'와 'f2'컬럼을 기준으로 그룹합을 계산하시오.
+'views' 값이 세 번째로 큰 city 이름을 구하시오.
+"""
+print("\n Q19")
+import pandas as pd
+exam19 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+
+# 결측치 채우기
+exam19 = exam19.bfill()
+
+# city와 f2 기준 그룹합 계산
+exam19 = exam19.groupby(['city', 'f2']).sum(numeric_only=True).reset_index()
+
+# 내림차순 정렬
+exam19 = exam19.sort_values('views', ascending=False)
+# print(exam19)
+
+# 3번째로 큰 값 출력
+print(exam19.iloc[2,0]) # 출력값 경기
