@@ -1,0 +1,18 @@
+Python, numpy, matplotlib, pandas
+
+opencv, yolo
+
+opencv 이미지 전처리와 출력은 opencv 담당, 
+yolo는 객체 탐지 담당
+
+사진 촬영은 배경 다양하게, 각도 다양하게, 거리 다양하게, 조명 다양하게,
+살짝 가려진 사진, 사진 하나에 최소 두 개 이상 찍기,
+위치 다양하게 (중앙, 왼쪽, 오른쪽, 모서리)
+
+서버 운영
+ 웹서버 (tomcat)
+ DB서버 (mysql)
+ fastAPI 서버
+ CVAT 서버
+
+wsl
