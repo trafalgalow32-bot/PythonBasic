@@ -41,7 +41,13 @@ exam2 = exam2['subscribed'].value_counts()
 # print(exam2)
 
 # 일(day) 값을 찾고, 정수형으로 변경
-day = int(exam2.index[0][-2:])
+day = int(exam2.index[0][-2:]) # [8:] 도 됨!
+"""
+문 자 :   2   0   2   5   -   0   2   -   1   7
+앞인덱스:  0   1   2   3   4   5   6   7   8   9
+뒤인덱스: -10 -9  -8  -7  -6  -5  -4  -3  -2  -1
+"""
+
 print(day) # 출력값 17
 
 """
