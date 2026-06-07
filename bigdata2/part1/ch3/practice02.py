@@ -249,15 +249,15 @@ def fee(distance):
         return 8000
 
 # 각 주문에 대한 배달료 계산
-exam28['배달료'] = exam28['거리'].apply(fee)
+exam29['배달료'] = exam29['거리'].apply(fee)
 
 # 월별로 배달료 집계
-exam28['주문시간'] = pd.to_datetime(exam28['주문시간'])
+exam29['주문시간'] = pd.to_datetime(exam29['주문시간'])
 
 # 월별로 배달료의 총집합 집계
-exam28['주문시간'] = pd.to_datetime(exam28['주문시간'])
-period_m = exam28['주문시간'].dt.to_period("M")
-monthly = exam28.groupby(period_m)['배달료'].sum()
+exam29['주문시간'] = pd.to_datetime(exam29['주문시간'])
+period_m = exam29['주문시간'].dt.to_period("M")
+monthly = exam29.groupby(period_m)['배달료'].sum()
 
 # 가장 많은 배달료가 발생한 월과 그 월의 총 배달료 찾기
 max_fee_month = monthly.idxmax()
@@ -357,7 +357,7 @@ exam34_sci = pd.read_csv('bigdata2/part1/ch3/school_data_science.csv')
 
 # 두 데이터프레임 합치기(axis=1)
 exam34 = pd.concat([exam34, exam34_sci], axis=1)
-print(exam34)
+# print(exam34)
 
 # 수평(열)으로 평균 계산
 exam34['수영국과 평균'] = exam34[['수학', '영어', '국어', '과학']].mean(axis=1)
