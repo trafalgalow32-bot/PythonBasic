@@ -65,10 +65,10 @@ exam22['주문시간'] = pd.to_datetime(exam22['주문시간'])
 exam22['diff'] = (exam22['실제도착시간'] - exam22['주문시간']).dt.total_seconds() / 60
 
 # 앱 종류별 도착 시간과 주문 시간 차이의 평균 계산
-exam22 = exam22.groupby('앱종류')['diff'].mean()
+diff_mean = exam22.groupby('앱종류')['diff'].mean()
 
 # 가장 작은 시간(분) 반올림 후 출력
-print(round(exam22.min())) # 출력값 62
+print(int(round(diff_mean.min()))) # 출력값 62
 
 """
 23. 시간 간의 차이 계산(분), 비율
@@ -378,14 +378,14 @@ exam35 = pd.read_csv('bigdata2/part1/ch3/school_data.csv')
 exam35_soc = pd.read_csv('bigdata2/part1/ch3/school_data_social.csv')
 
 # 이름을 기준으로 두 데이터프레임 합치기
-merged_exam35 = pd.merge(exam35, exam35_soc, on='이름')
+merge = pd.merge(exam35, exam35_soc, on='이름')
 
 # 교사 필터링
-cond1 = merged_exam35['영어교사'] == '장선생'
-cond2 = merged_exam35['사회교사'] == '오선생'
+cond1 = merge['영어교사'] == '장선생'
+cond2 = merge['사회교사'] == '오선생'
 
 # 필터링된 데이터에서 수학 점수 합
-result = merged_exam35[cond1 & cond2]['수학'].sum()
+result = merge[cond1 & cond2]['수학'].sum()
 print(result) # 출력값 602
 
 """

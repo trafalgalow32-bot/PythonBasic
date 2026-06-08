@@ -98,7 +98,7 @@ exam4 = exam4.sort_values('views', ascending=False) # .reset_index(drop=True)
 # print(exam4)
 
 # views 상위 10개 데이터 값 구하기
-# top10 = exam4['views'][:9]
+# top10 = exam4['views'][:10]
 # print(top10)
 min = exam4.iloc[:10]['views'].min()
 exam4.iloc[:10, -1] = min

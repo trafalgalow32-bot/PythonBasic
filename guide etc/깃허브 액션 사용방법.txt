@@ -1,0 +1,66 @@
+서버에서 해야할일(스프링 운영하는 )
+
+docker 루트(메인폴더)폴더 생성하고
+cd  루트폴더
+git clone 깃허브주소/레포지토리명
+cd 레포지토리명
+gradlew clean bootjar
+cd ..
+docker compose up -d --build 
+
+
+github action 설정
+스프링프로젝트 레포지토리페이지로 이동
+상단 메뉴에 Settings 클릭
+-> Secrets and variables  -> Actions -> 
+New repoistory secret
+->  여러개  등록한다.  
+   name :  SERVER_HOST  
+   Secret : 118.217.27.132
+
+   name : SERVER_USER
+   secret : administator  (win), 
+              리눅스에 만든계정명
+
+   name : SERVER_PATH
+   secret : C:\server\프로젝명폴더이름
+
+   name : SERVER_KEY
+   secret : ssh개인키
+
+
+프로젝트 폴더 밑에  
+.github/workflows  폴더 생성
+deploy.yml 파일생성
+
+name: Deploy Docker Compose
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVET_KEY }}
+          script: |
+            cd "${{ secrets.SERVET_PATH }}"
+            git pull
+            ./gradlew clean bootjar
+            cd ..
+            docker compose up -d -build
+
+
+그다음에는  개발 구현 하면서 풀리퀘해서
+main( 개발 완성 브랜치) 에 
+git add .
+git commit -m "update"
+git push origin main
+해주면 자동으로 실행 되어  배포파일만들고 
+도커 빌드됨
+  
