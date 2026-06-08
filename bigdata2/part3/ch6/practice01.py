@@ -33,7 +33,7 @@ p–value가 0.05보다 작으므로 귀무가설을 기각한다.
 """
 
 statistic, pvalue = stats.ttest_1samp(exam1['Caffeine(mg)'], 95, alternative='less')
-print("{:.10f}".format(pvalue)) # 출력값 0.0000058687
+print("{:.10f}".format(pvalue)) # 출력값 0.0000058687 (그냥 print(pvalue))!
 
 """
 정답
@@ -57,6 +57,8 @@ exam2 = pd.DataFrame({
 print(exam2.head(2))
 
 # 독립 표본 t-검정
+from scipy import stats
+
 new = exam2['충전기'] == 'New'
 old = exam2['충전기'] == 'Old'
 print(stats.ttest_ind(exam2[new]['충전시간'], exam2[old]['충전시간'],
@@ -93,6 +95,7 @@ exam3['diff'] = exam3['새로운방법'] - exam3['기존방법']
 print(exam3['diff'].mean())
 
 # 대응 표본 t-검정
+from scipy import stats
 print(stats.ttest_rel(exam3['새로운방법'], exam3['기존방법'], alternative='less'))
 
 """

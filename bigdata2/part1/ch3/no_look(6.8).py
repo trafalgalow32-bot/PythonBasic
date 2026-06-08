@@ -6,17 +6,19 @@
 # """
 # print("\n Q35")
 # import pandas as pd
-# data1 = pd.read_csv('bigdata2/part1/ch3/school_data.csv')
-# data2 = pd.read_csv('bigdata2/part1/ch3/school_data_social.csv')
+# exam35 = pd.read_csv('bigdata2/part1/ch3/school_data.csv')
+# exam35_soc = pd.read_csv('bigdata2/part1/ch3/school_data_social.csv')
 
-# merge = pd.merge(data1, data2, on='이름')
+# merge = pd.merge(exam35, exam35_soc, on='이름')
 # # print(merge)
 
 # cond1 = merge['영어교사'] == '장선생'
 # cond2 = merge['사회교사'] == '오선생'
 
-# result = merge[(cond1)&(cond2)]['수학'].sum()
-# print(int(result))
+# filter = merge[(cond1)&(cond2)]
+
+# math = filter['수학'].sum()
+# print(int(math))
 
 # """
 # 23. 시간 간의 차이 계산(분), 비율
@@ -26,23 +28,19 @@
 # print("\n Q23")
 # import pandas as pd
 # exam23 = pd.read_csv('bigdata2/part1/ch3/delivery_time.csv')
-# # print(exam23)
+
 # exam23['실제도착시간'] = pd.to_datetime(exam23['실제도착시간'])
-# # print(exam23['실제도착시간'])
 # exam23['예상도착시간'] = pd.to_datetime(exam23['예상도착시간'])
 
-# # exam23['지연시간'] = (exam23['예상도착시간'] - exam23['실제도착시간']) # 이렇게 말고!
+# # print(exam23)
 
 # exam23['지연시간'] = (exam23['실제도착시간'] - exam23['예상도착시간']).dt.total_seconds() / 60
 
-# # exam23['지연시간'] = pd.to_datetime(exam23['지연시간']) # 이거 필요 없음!
-# # print(exam23['지연시간'])
 # exam23['지연여부'] = exam23['지연시간'] > 0
 
-# delay = exam23.groupby('결제종류')['지연여부'].mean() # 여기 mean()을 왜 붙이지?
-# # print(delay)
-# delay = delay.max()
-# print(round(delay,2))
+# result = exam23.groupby('결제종류')['지연여부'].mean()
+
+# print(round(result.max(), 2))
 
 # """
 # 04. 값 변경, 정렬, 합계
@@ -54,23 +52,23 @@
 # print("\n Q4")
 # import pandas as pd
 # exam4 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
-# exam4['views'] = exam4['views'].fillna(0) 
 
-# # exam4= exam4.sort_values('views', ascending=False)
-# exam4 = exam4.sort_values('views', ascending=False) # 데이터 전체를 내림차순으로, 기준을 'views' 컬럼으로해서! 
+# exam4['views'] = exam4['views'].fillna(0)
+# # print(exam4.head(30))
+
+# exam4 = exam4.sort_values('views', ascending=False)
 # # print(exam4)
+# # top10 = exam4[:10]
+# # # print(top10)
+# # top10 = 
 
-# # print(exam4[10:30])
-# # print(exam4)
-# # top10 = exam4['views'][:9]
-# # print(top10)
+# min = exam4['views'].iloc[9]
 
-# min = exam4.iloc[:10]['views'].min()
-# exam4.iloc[:10,-1] = min
+# exam4.loc[exam4.index[:10], 'views'] = min
 # # print(min)
 
-# print(int(exam4['views'].sum()))
-
+# # views 컬럼의 합
+# print(int(exam4['views'].sum())) # 출력값 652812
 
 # """
 # 22. 시간 간의 차이 계산(분), 그룹핑
@@ -82,33 +80,33 @@
 # import pandas as pd
 # exam22 = pd.read_csv('bigdata2/part1/ch3/delivery_time.csv')
 
-# # exam22['주문시간'] = exam22['주문시간'].pd.to_datetime # 문법오류!! 다시!
+# # print(exam22)
 # exam22['주문시간'] = pd.to_datetime(exam22['주문시간'])
 # exam22['실제도착시간'] = pd.to_datetime(exam22['실제도착시간'])
 # # print(exam22)
-
 # exam22['diff'] = (exam22['실제도착시간'] - exam22['주문시간']).dt.total_seconds() / 60
+# # print(exam22['diff'])
 
 # diff_mean = exam22.groupby('앱종류')['diff'].mean()
 
 # print(int(round(diff_mean.min())))
 
-# """
-# 16. 이상치, IQR
-# 'views' 컬럼의 1사분위수, 3사분위수 그리고 IQR을 계산하시오.
-# 이상치 조건에 맞는 데이터를 찾으시오. (이상치는 1분위수 - (IQR * 1.5)보다 작은 값과 3사분위수 + (IQR  * 1.5)보다 큰 값)
-# 이상치 데이터의 'views' 컬럼 합을 정수로 구하시오.
-# """
-# print("\n Q16")
-# import pandas as pd
-# exam16 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
+"""
+16. 이상치, IQR
+'views' 컬럼의 1사분위수, 3사분위수 그리고 IQR을 계산하시오.
+이상치 조건에 맞는 데이터를 찾으시오. (이상치는 1분위수 - (IQR * 1.5)보다 작은 값과 3사분위수 + (IQR  * 1.5)보다 큰 값)
+이상치 데이터의 'views' 컬럼 합을 정수로 구하시오.
+"""
+print("\n Q16")
+import pandas as pd
+exam16 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
 
-# q3 = exam16['views'].quantile(.75)
-# q1 = exam16['views'].quantile(.25)
-# iqr = q3 - q1
+q3 = exam16['views'].quantile(.75)
+q1 = exam16['views'].quantile(.25)
+iqr = q3 - q1
 
-# cond1 = q1 - (iqr * 1.5)
-# cond2 = q3 + (iqr * 1.5)
+cond1 = q1 - (iqr * 1.5)
+cond2 = q3 + (iqr * 1.5)
 
-# result = exam16['views'][(exam16['views'] < cond1) | (exam16['views'] > cond2)].sum()
-# print(int(result))
+outlier = exam16[[(cond1)|(cond2)]['views']]
+print(outlier)
