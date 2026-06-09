@@ -94,7 +94,7 @@ exam4['views'] = exam4['views'].fillna(0)
 # print(len(exam4[exam4.isna()==True])) # 결측치 대체 여부 확인
 
 # 내림차순 정렬
-exam4 = exam4.sort_values('views', ascending=False) # .reset_index(drop=True)
+exam4 = exam4.sort_values('views', ascending=False).reset_index(drop=True)
 # print(exam4)
 
 # views 상위 10개 데이터 값 구하기
@@ -102,7 +102,7 @@ exam4 = exam4.sort_values('views', ascending=False) # .reset_index(drop=True)
 # print(top10)
 min = exam4['views'].iloc[9]
 
-exam4.iloc[exam4.index[:10], 'views'] = min
+exam4.loc[0:9, 'views'] = min
 # print(min)
 
 # views 컬럼의 합
@@ -457,4 +457,4 @@ exam19 = exam19.sort_values('views', ascending=False)
 # print(exam19)
 
 # 3번째로 큰 값 출력
-print(exam19.iloc[2,0]) # 출력값 '경기'
+print(exam19.iloc[2,2]) # 출력값 '경기', iloc[행,열]

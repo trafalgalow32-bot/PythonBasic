@@ -33,7 +33,7 @@ p–value가 0.05보다 작으므로 귀무가설을 기각한다.
 """
 
 statistic, pvalue = stats.ttest_1samp(exam1['Caffeine(mg)'], 95, alternative='less')
-print("{:.10f}".format(pvalue)) # 출력값 0.0000058687 (그냥 print(pvalue))!
+print(f"{ statistic:4f}", f"{pvalue:.10f}") # 출력값 0.0000058687 (그냥 print(pvalue))!
 
 """
 정답
