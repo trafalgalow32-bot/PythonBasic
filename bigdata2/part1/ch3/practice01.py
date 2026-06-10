@@ -457,4 +457,4 @@ exam19 = exam19.sort_values('views', ascending=False)
 # print(exam19)
 
 # 3번째로 큰 값 출력
-print(exam19.iloc[2,2]) # 출력값 '경기', iloc[행,열]
+print(exam19.iloc[2,0]) # 출력값 '경기', iloc[행,열]
