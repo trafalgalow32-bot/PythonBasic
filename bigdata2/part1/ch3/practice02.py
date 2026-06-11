@@ -267,7 +267,7 @@ print(max_fee_value) # 출력값 448000
 """
 30. 주말, 평일 구분
 주말 주문 건수와 평일 주문 건수를 구하시오.
-주물 주문 건수와 평일 주문 건수의 차이를 절대값으로 구하고 정수형으로 구하시오.
+주말 주문 건수와 평일 주문 건수의 차이를 절대값으로 구하고 정수형으로 구하시오.
 """
 print("\n Q30")
 import pandas as pd
@@ -276,10 +276,12 @@ exam30['주문시간'] = pd.to_datetime(exam30['주문시간'])
 
 # 주말/평일 구분 0: 월, 1: 화 ~ 5: 토, 6: 일
 exam30['dayofweek'] = exam30['주문시간'].dt.dayofweek
-exam30['주말'] = exam30['dayofweek'] >= 5
+exam30['주말'] = exam30['dayofweek'] >= 5 # 얘는 불리언이라...
 
 # 주말 개수, 평일 개수 계산
-weekend = sum(exam30['주말'])
+weekend = sum(exam30['주말']) # 여기서는 주말이 1에 해당. 따라서 이걸로 주말의 전체 개수 구할 수 있음!
+## 정 불안하면 이렇게도 할 수 있음
+# weekend = len(exam30[exam30['주말'] == True])
 weekday = len(exam30) - weekend # sum(~exam30['주말']) 보다 리스크 덜한 코드로 변경!
 
 # 차이 절댓값 출력

@@ -350,16 +350,20 @@ exam15 = pd.read_csv('bigdata2/part1/ch3/type1_data1.csv')
 # print(exam15)
 
 # 자료형이 object가 아닌 컬럼 선택
-cols = exam15.select_dtypes(exclude='object').columns
+cols = exam15.select_dtypes(exclude='object').columns 
+# exam15 = exam15.select_dtypes(include='number')로 해도 됨
 exam15 = exam15[cols]
 
-print(exam15) # exclude='object'는 문자형 자료형을 배제하라는 뜻?
+# print(exam15) # exclude='object'는 문자형 자료형을 배제하라는 뜻? 맞음!
 
 # 결측치 0으로 대체
 exam15 = exam15.fillna(0)
 
 # 행과 열 변경
 exam15 = exam15.T
+#### 이런 방법도!
+#### row_sums = exam15.sum(axis=1)
+#### result = sum(row_sums > 3000)
 
 # 행별 합이 3000 이상인 데이터의 수
 print(sum(exam15.sum() > 3000)) # 출력값 88
