@@ -14,7 +14,7 @@
 # 최종 파일: result.csv(컬럼 1개 pred)
 
 # 2. 라이브러리 및 데이터 불러오기
-print("\n Q1")
+print("\n Q3")
 import pandas as pd
 
 train = pd.read_csv("bigdata2/part2/ch6/creditcard_train.csv")

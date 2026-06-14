@@ -15,7 +15,7 @@ city 컬럼은 train과 test가 다르다.
 # target: target
 # 최종 파일: result.csv(컬럼 1개 pred, 1 확률값)
 # 2. 라이브러리 및 데이터 불러오기
-print("\n Q1")
+print("\n Q2")
 import pandas as pd
 
 train = pd.read_csv("bigdata2/part2/ch6/hr_train.csv")

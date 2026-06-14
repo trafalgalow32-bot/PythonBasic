@@ -59,7 +59,7 @@ print(exam2.head(2))
 # 독립 표본 t-검정
 from scipy import stats
 
-new = exam2['충전기'] == 'New'
+new = exam2['충전기'] == 'New' # 이건 불리언 값으로 조건만 지정한 것일뿐, 값 그 자체가 아님!
 old = exam2['충전기'] == 'Old'
 print(stats.ttest_ind(exam2[new]['충전시간'], exam2[old]['충전시간'],
                       alternative='less', equal_var=True))
@@ -144,7 +144,7 @@ shapiro()를 활용해 정규성 검정을 실시한다. 4개 그룹 모두 정�
 """
 
 # 일원분산분석을 위한 모델 학습
-from statsmodels.formula.api import ols
+from statsmodels.formula.api import ols # ols가 뭔지
 model = ols('scores ~ groups', exam4).fit()
 
 # ANOVA 테이블
@@ -174,8 +174,9 @@ import pandas as pd
 exam5 = pd.read_csv("bigdata2/part3/ch6/tomato2.csv")
 print(exam5.head())
 
-import statsmodels.api as sm
+import statsmodels.api as sm # sm ols가 뭔지
 from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
 
 # 이원 분산 분석
 model = ols('수확량 ~ C(비료유형) * C(물주기)', data=exam5).fit()
@@ -227,7 +228,7 @@ p-value가 0.00018로 유의수준 0.05보다 작으므로 귀무가설을 기�
 4. 기각
 """
 
-print("\n Q7")
+print("\n Q7") 
 # (1) 교차표 데이터가 주어졌을 때
 import pandas as pd
 from scipy.stats import chi2_contingency

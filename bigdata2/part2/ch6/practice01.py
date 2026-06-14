@@ -21,28 +21,24 @@ test = pd.read_csv("bigdata2/part2/ch6/diabetes_test.csv")
 print("===== 데이터 크기 =====")
 print("Train Shape : ", train.shape)
 print("Test Shape : ", test.shape)
-print("\n")
 
-print("===== train 데이터 샘플 =====")
+print("\n===== train 데이터 샘플 =====")
 print(train.head(1))
-print("\n")
 
-print("===== test 데이터 샘플 =====")
+
+print("\n===== test 데이터 샘플 =====")
 print(test.head(1))
-print("\n")
 
-print("===== 데이터 정보(자료형) =====")
+print("\n===== 데이터 정보(자료형) =====")
 print(train.info())
-print("\n")
 
-print("===== train 결측치 수 =====")
+print("\n===== train 결측치 수 =====")
 print(train.isnull().sum().sum())
-print("\n")
-print("===== test 결측치 수 =====")
-print(test.isnull().sum().sum())
-print("\n")
 
-print("===== target 빈도 =====")
+print("\n===== test 결측치 수 =====")
+print(test.isnull().sum().sum())
+
+print("\n===== target 빈도 =====")
 print(train['Outcome'].value_counts())
 
 """

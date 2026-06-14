@@ -13,6 +13,7 @@ train 데이터의 자료형을 살펴보면 float가 17개, object가 4개다. 
 # 최종 파일: result.csv(컬럼 1개 pred)
 
 # 2. 라이브러리 및 데이터 불러오기
+print("Q1")
 import pandas as pd
 
 train = pd.read_csv("bigdata2/part2/ch7/score_train.csv")
@@ -77,7 +78,7 @@ submit = pd.DataFrame({'pred' : pred})
 submit.to_csv("result.csv", index=False)
 
 print("\n ===== 예측 결과 확인 (샘플 5개) =====")
-print(pd.read_csv(""))
+print(pd.read_csv("result.csv"))
 
 from sklearn.metrics import roc_auc_score
 roc_auc = roc_auc_score(y_val, pred[:,1])

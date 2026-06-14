@@ -146,3 +146,47 @@
 # exam15 = exam15.T
 
 # print(sum(exam15.sum() > 3000))
+
+# """
+# 39. 재구조화(melt), 그룹핑
+# 지역(Region)과 월(Jan, Feb, Mar)별 매출(Sales) 합계를 구하시오.
+# 위에서 구한 결과 중, 매출 합계(Sales)가 1400을 초과하는 경우가 몇 건인지 구하시오.
+# """
+# print("\n Q39")
+# import pandas as pd
+# exam39 = pd.read_csv('bigdata2/part1/ch3/monthly_sales.csv')
+
+# # print(exam39)
+
+# melted = pd.melt(
+#     exam39,
+#     id_vars='Region',
+#     value_vars=['Jan','Feb','Mar'],
+#     var_name='Month',
+#     value_name='Sales'
+# )
+
+# group = melted.groupby(['Region', 'Month'])['Sales'].sum().reset_index()
+
+# cond = group['Sales'] > 1400
+# result = len(group[cond])
+# print(result)
+
+"""
+23. 시간 간의 차이 계산(분), 비율
+각 결제 종류별로 실제 도착 시간이 예상 도착 시간보다 늦은 주문의 비율을 계산하시오.
+비율 중 가장 큰 값을 반올림하여 소수 둘째 자리까지 구하시오.
+"""
+print("\n Q23")
+import pandas as pd
+exam23 = pd.read_csv('bigdata2/part1/ch3/delivery_time.csv')
+
+# print(exam23)
+exam23['실제도착시간'] = pd.to_datetime(exam23['실제도착시간'])
+exam23['예상도착시간'] = pd.to_datetime(exam23['예상도착시간'])
+
+exam23['시간차이'] = (exam23['실제도착시간'] - exam23['예상도착시간']).dt.total_seconds() / 60
+exam23['지연여부'] = exam23['시간차이'] > 0
+
+ratio = exam23.groupby('결제종류')['지연여부'].mean()
+print(round(ratio.max(),2))
