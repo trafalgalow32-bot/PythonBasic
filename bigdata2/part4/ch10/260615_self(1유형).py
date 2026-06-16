@@ -2,50 +2,68 @@
 ##### 작업형 1유형
 #####  문제1.
 
-
-
-# 1-1.
 # import pandas as pd
 # df = pd.read_csv("bigdata2/part4/ch10/subject_performance.csv")
-# print(df)
-# df['소주제정답률'] = df.groupby('sub_topic')['is_correct'] / df.groupby('sub_topic')
-# print(df)
+# # print(df)
 
+# # 소주제별 정답률 계산
 # acc = df.groupby('sub_topic')['is_correct'].mean()
-# # print(acc)
 
+# # 내림차순 정렬 후 중복 제거
 # result = acc.sort_values(ascending=False).drop_duplicates()
 # print(round(result,3))
 
-# 1-2. 
+##### 문제2.
 # import pandas as pd
-# df = pd.read_csv('bigdata2/part4/ch10/cafe_sales.csv')
-# # df = df.sort_values('price', ascending=False)
+# df = pd.read_csv("bigdata2/part4/ch10/cafe_sales.csv")
 # # print(df)
 
+# # 2-1. 
+# # order_date -> 연-월 변환
 # df['order_date'] = pd.to_datetime(df['order_date'])
 # df['year_month'] = df['order_date'].dt.to_period('M')
 # # print(df)
 
-# monthly_sales = df.groupby('year_month')['price'].sum()
-# monthly_sales = monthly_sales.sort_values(ascending=False)
-# print(monthly_sales)
+# # 연-월 단위로 그룹화하여 각 월의 총 매출액(price 합계)을 계산
+# monthly = df.groupby('year_month')['price'].sum()
 
-# 1-3.
+# # 연-월별 총매출액 중 상위 2번째 값
+# print(monthly.nlargest(3)) # 정답 328741
+
+# # 2-2.
+# # 연-월별 총매출액 중 상위 4개만 추출
+# top4 = monthly.nlargest(4)
+# target_ym = top4.index[3]
+
+# # 4번째로 큰 연-월에 해당하는 데이터만 추출
+# cond = df['year_month'] == target_ym
+# df = df[cond]
+
+# # 해당 연-월의 카테고리별 매출 합계 중 최댓값 계산
+# cate = df.groupby('category')['price'].sum()
+
+# print(cate.max())
+
+##### 문제3.
 # import pandas as pd
-# df = pd.read_csv('bigdata2/part4/ch10/hamspam.csv')
+# df = pd.read_csv("bigdata2/part4/ch10/hamspam.csv")
 # # print(df)
+
+# # 각 메시지의 단어 개수 구하기(띄어쓰기 기준)
 # df['단어'] = df['text'].str.split()
 # df['단어수'] = df['단어'].str.len()
 # # print(df)
 
-# # print(df['text'][1])
-# # print(df['단어'][1])
-# # print(df['단어수'][1])
+# # 체크(2번째 행)
+# print(df['text'][1])
+# print(df['단어'][1])
+# print(df['단어수'][1])
 
+# # 스팸과 정상 메시지의 평균 단어 수 구하기
 # m = df.groupby('label')['단어수'].mean()
+# # print(m)
 
+# # 두 평균 차이의 절대값
 # diff = abs(m['spam'] - m['ham'])
 
 # print(round(diff,3))
-

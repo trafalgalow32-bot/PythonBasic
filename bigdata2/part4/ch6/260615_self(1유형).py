@@ -3,51 +3,49 @@
 #####  문제1.
 
 # import pandas as pd
-# df = pd.read_csv("bigdata2/part4/ch7/student_assessment.csv")
+# df = pd.read_csv("bigdata2/part4/ch6/data6-1-1.csv")
 # # print(df)
 
-# # 결측치 제거
-# df = df.dropna()
-# # print(df)
+# df['출동시간'] = pd.to_datetime(df['출동시간'])
+# df['도착시간'] = pd.to_datetime(df['도착시간'])
+# df['시간차이'] = (df['도착시간'] - df['출동시간']).dt.total_seconds() / 60
+# print(df)
 
-# # 가장 많이 수강한 과목 필터링
-# id = df['id_assessment'].value_counts().idxmax()
-# cond = df['id_assessment'] == id
-# df = df[cond]
+# m = df.groupby('소방서')['시간차이'].mean()
+# print(round(m.max()))
 
-# # 과목 점수 스탠더드 스케일
-# from sklearn.preprocessing import StandardScaler
-# scaler = StandardScaler()
-# df['score'] = scaler.fit_transform(df[['score']])
-
-# # 가장 큰 값
-# print(round(df['score'].max(), 3))
-
-##### 문제2.
+##### 문제2. 
 # import pandas as pd
-# df = pd.read_csv('bigdata2/part4/ch7/stock_market.csv')
+# df = pd.read_csv("bigdata2/part4/ch6/data6-1-2.csv")
 # # print(df)
 
-# # close와의 상관 관계(절대값)
-# df_corr = df.corr()['close'].abs()
+# # 교사 한 명당 맡은 학생수
+# df['교사1인당학생수'] = (df['1학년'] + df['2학년'] + df['3학년'] + df['4학년'] + df['5학년'] + df['6학년']) / df['교사수']  
+# # print(df)
 
-# # 상관 관계가 높은 변수명
-# col = df_corr.loc['DE1' : 'DE77'].idxmax()
+# # 교사1인당하갱수 컬럼을 내림차순으로 정렬
+# df = df.sort_values('교사1인당학생수', ascending=False)
 
-# # 위에서 구한 변수명의 평균값
-# print(round(df[col].mean(), 4))
+# #  틀리게 작성한 노룩 코드
+# # filtered = df.groupby('학교명')['교사1인당학생수'].sum()
+# # print(filtered.idxmax())
+
+# # 최상단 행의 교사 수 값 출력
+# print(df.iloc[0,1])
 
 ##### 문제3.
 # import pandas as pd
-# df = pd.read_csv('bigdata2/part4/ch7/air_quality.csv')
+# df = pd.read_csv("bigdata2/part4/ch6/data6-1-3.csv")
 # # print(df)
 
-# q1 = df['CO2'].quantile(.25)
-# q3 = df['CO2'].quantile(.75)
-# iqr = q3 - q1
+# # 총 범죄 건수 계산
+# df['총범죄건수'] = (df['강력범죄'] + df['절도범죄'] + df['폭력범죄'] + df['지능범죄'] + df['풍속범죄'] + df['교통범죄'])
 
-# lower = q1 - 1.5 * iqr
-# upper = q3 + 1.5 * iqr
+# # 연도 슬라이싱
+# df['연도'] = df['날짜'].str[:4]
 
-# outlier = df[(df['CO2'] < lower) | (df['CO2'] > upper)]
-# print(len(outlier))
+# # 연도별 총 범죄 건수 합 계산
+# result = df['총범죄건수'].groupby(df['연도']).sum()
+
+# # 가장 큰 값의 월평균 계산
+# print(round(result.max()/12))

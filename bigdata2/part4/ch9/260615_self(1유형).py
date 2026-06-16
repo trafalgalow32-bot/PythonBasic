@@ -1,61 +1,68 @@
 ##### 기출문제 9회
-##### 작업형 1유형
+##### 작업형 1유형(역대 초고난도 회차)
+
 #####  문제1.
 
+# 1-1.
 # import pandas as pd
-# df = pd.read_csv('bigdata2/part4/ch9/loan.csv')
+# df = pd.read_csv('bigdata2/part4/ch9/design.csv')
 # # print(df)
 
-# df['총대출액'] = df['신용대출'] + df['담보대출']
-# # print(df)
+# # train, test 데이터 분리
+# from statsmodels.formula.api import ols
 
-# answer = df.groupby(['지역코드', '성별'])['총대출액'].sum().unstack()
-# answer['차이'] = abs(answer[1] - answer[2])
-# # print(answer)
-# result = answer['차이'].idxmax()
-# print(result)
+# cond1 = df['id'] <= 140
+# cond2 = df['id'] > 140
+# train = df[cond1].copy()
+# test = df[cond2].copy()
 
-# ##### 문제2.
-# import pandas as pd
-# df = pd.read_csv('bigdata2/part4/ch9/crime.csv')
-# # print(df)
+# # 전체 변수 사용 회귀 분석
+# model = ols("design ~ c1 + c2 + c3 + c4 +c5", data=train).fit()
+# print(model.summary()) # pvalue 값이 0.05보다 작은 값은 세 개!
 
-# cond1 = df['구분'] == "발생건수"
-# cond2 = df['구분'] == "검거건수"
-# df1 = df[cond1].iloc[:,2:]
-# df2 = df[cond2].iloc[:,2:]
+# # 1-2.
+# # 유의한 변수만 사용한 회귀 분석
+# model = ols("design ~ c1 + c2 + c4", data=train).fit()
 
-# df1 = df1.reset_index(drop=True)
-# df2 = df2.reset_index(drop=True)
-# df3 = df2 / df1
+# # train 데이터에서 design의 예측
+# train['pred_design'] = model.predict(train)
 
-# # print(df3)
-# listbox = df3.idxmax(axis=1)
+# # 상관계수 계산(기본값: 피어슨)
+# result = train['design'].corr(train['pred_design'])
+# print(round(result,3))
 
-# result = 0
-# for index, item in enumerate(listbox):
-#     result = result + df2.loc[index, item]
+# # 1-3.
+# # test 데이터에서 design값 계산
+# test['pred_design'] = model.predict(test)
 
-# # print(result)
+# # test 데이터에 대한 RMSE 계산
+# from sklearn.metrics import root_mean_squared_error
+# rmse = root_mean_squared_error(test['design'], test['pred_design'])
+# print(round(rmse,3))
 
-##### 문제3.
+##### 문제2.
 import pandas as pd
-# df = pd.read_csv('bigdata2/part4/ch9/hr.csv')
+df = pd.read_csv('bigdata2/part4/ch9/retention.csv')
+# print(df)
 
-# df['만족도'] = df['만족도'].fillna(df['만족도'].mean())
-# # print(df.head(30))
+# 2-1.
+from statsmodels.formula.api import logit
 
-# gm = df.groupby(['부서', '성과등급'])['근속연수'].transform('mean')
-# gm = gm.astype(int)
-# df['근속연수'] = df['근속연수'].fillna(gm)
+# 로지스틱 회귀분석 수행
+formula = 'Churn ~ MonthlyCharges + CustomerTenure + HasPhoneService + HasTechInsurance'
+model = logit(formula, data=df).fit()
 
-# df['연봉_근속연수'] = df['연봉'] / df['근속연수']
-# df_year = df.nlargest(3, '연봉_근속연수')
-# A = df_year.iloc[-1]['근속연수']
+# 학습된 모델의 회귀 분석 결과 출력
+print(model.summary()) # 정답 0.008
 
-# df['연봉_만족도'] = df['연봉'] / df['만족도']
-# df_like = df.nlargest(2, '연봉_만족도')
-# B = df_like.iloc[-1]['교육참가횟수']
+# 2-2
+# 오즈비 계산
+import numpy as np
+result = np.exp(model.params['HasPhoneService'])
+print(round(result, 3))
 
-# result = A + B
-# print(result)
+# 2-3
+# 각 고객의 이탈 확률 예측
+pred_probs = model.predict(df)
+
+print(sum(pred_probs > 0.3))
