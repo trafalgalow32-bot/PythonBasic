@@ -1,4 +1,5 @@
 source .venv/Scripts/activate \ 가상환경 활성화 (※ 가상환경이 속한 디렉터리 위치한 상태로!)
+(혹은 .\.venv\Scripts\Activate.ps1)
 
 deactive \ 가상환경 비활성화
 
